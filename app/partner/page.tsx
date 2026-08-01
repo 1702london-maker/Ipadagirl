@@ -18,7 +18,7 @@ export default function PartnerPage() {
       <Navbar />
       <main>
         <section className="py-20 bg-pink-soft/30">
-          <div className="max-w-container-max mx-auto px-6 max-w-3xl">
+          <div className="max-w-container-max mx-auto px-4 md:px-6 max-w-3xl">
             <span className="inline-block px-4 py-1.5 bg-dignity-purple/10 text-dignity-purple rounded-full font-label-md text-label-md mb-6">PARTNERSHIPS</span>
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-ink-navy mb-6">Partner With Us</h1>
             <p className="font-body-lg text-body-lg text-on-surface-variant">
@@ -28,7 +28,7 @@ export default function PartnerPage() {
         </section>
 
         <section className="py-20">
-          <div className="max-w-container-max mx-auto px-6">
+          <div className="max-w-container-max mx-auto px-4 md:px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {partnerTypes.map((p) => (
                 <div key={p.title} className="bg-base-white p-8 rounded-2xl border border-surface-container-high shadow-sm hover:shadow-md transition-all">
@@ -45,7 +45,7 @@ export default function PartnerPage() {
 
         {/* Partnership Form */}
         <section className="py-20 bg-surface-container-low">
-          <div className="max-w-container-max mx-auto px-6">
+          <div className="max-w-container-max mx-auto px-4 md:px-6">
             <div className="max-w-2xl mx-auto">
               <h2 className="font-headline-md text-headline-md text-ink-navy mb-4 text-center">Apply to Partner</h2>
               <p className="text-on-surface-variant text-center mb-10">Fill in the form below and our team will be in touch within 5 working days.</p>

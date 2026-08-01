@@ -40,7 +40,7 @@ export default function StoriesPage() {
       <Navbar />
       <main>
         <section className="py-20 bg-pink-soft/30">
-          <div className="max-w-container-max mx-auto px-6 max-w-3xl">
+          <div className="max-w-container-max mx-auto px-4 md:px-6 max-w-3xl">
             <span className="inline-block px-4 py-1.5 bg-coral-warm/10 text-coral-warm rounded-full font-label-md text-label-md mb-6">NEWS & STORIES</span>
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-ink-navy mb-6">Stories & News</h1>
             <p className="font-body-lg text-body-lg text-on-surface-variant">
@@ -50,7 +50,7 @@ export default function StoriesPage() {
         </section>
 
         <section className="py-20">
-          <div className="max-w-container-max mx-auto px-6">
+          <div className="max-w-container-max mx-auto px-4 md:px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {articles.map((article) => (
                 <article key={article.title} className="bg-base-white rounded-3xl border border-surface-container-high shadow-sm overflow-hidden hover:shadow-md hover:-translate-y-1 transition-all">
@@ -79,7 +79,7 @@ export default function StoriesPage() {
         </section>
 
         <section className="py-16 bg-surface-container-low text-center">
-          <div className="max-w-container-max mx-auto px-6 space-y-4">
+          <div className="max-w-container-max mx-auto px-4 md:px-6 space-y-4">
             <h2 className="font-headline-sm text-headline-sm text-ink-navy">Stay up to date with our mission</h2>
             <p className="text-on-surface-variant font-body-md">Subscribe to receive outreach reports and updates.</p>
             <form className="flex gap-3 justify-center max-w-md mx-auto">

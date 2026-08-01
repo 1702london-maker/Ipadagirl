@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -28,7 +28,7 @@ export default function Navbar() {
 
   return (
     <header className="bg-base-white border-b border-surface-container shadow-sm sticky top-0 z-50">
-      <nav className="flex justify-between items-center max-w-container-max mx-auto px-6 py-4">
+      <nav className="flex justify-between items-center max-w-container-max mx-auto px-4 md:px-6 py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <span

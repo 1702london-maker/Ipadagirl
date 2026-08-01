@@ -24,7 +24,7 @@ export default function LearningHubPage() {
       <Navbar />
       <main>
         <section className="py-20 bg-dignity-purple/10">
-          <div className="max-w-container-max mx-auto px-6 text-center max-w-2xl mx-auto">
+          <div className="max-w-container-max mx-auto px-4 md:px-6 text-center max-w-2xl mx-auto">
             <span className="inline-block px-4 py-1.5 bg-dignity-purple/10 text-dignity-purple rounded-full font-label-md text-label-md mb-6">SAFE SPACE</span>
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-ink-navy mb-6">Girls&apos; Learning Hub</h1>
             <p className="font-body-lg text-body-lg text-on-surface-variant">
@@ -34,7 +34,7 @@ export default function LearningHubPage() {
         </section>
 
         <section className="py-20">
-          <div className="max-w-container-max mx-auto px-6">
+          <div className="max-w-container-max mx-auto px-4 md:px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {topics.map((topic) => (
                 <div key={topic.title} className="bg-base-white p-8 rounded-2xl border border-surface-container-high shadow-sm hover:shadow-md hover:-translate-y-1 transition-all cursor-pointer group">
@@ -54,7 +54,7 @@ export default function LearningHubPage() {
 
         {/* Ask Section */}
         <section className="py-20 bg-surface-container-low">
-          <div className="max-w-container-max mx-auto px-6">
+          <div className="max-w-container-max mx-auto px-4 md:px-6">
             <div className="max-w-2xl mx-auto text-center space-y-6">
               <h2 className="font-headline-md text-headline-md text-ink-navy">Ask iPadAGirl</h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant">

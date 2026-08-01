@@ -16,7 +16,7 @@ export default function ContactPage() {
       <Navbar />
       <main>
         <section className="py-20 bg-pink-soft/30">
-          <div className="max-w-container-max mx-auto px-6 max-w-3xl">
+          <div className="max-w-container-max mx-auto px-4 md:px-6 max-w-3xl">
             <span className="inline-block px-4 py-1.5 bg-coral-warm/10 text-coral-warm rounded-full font-label-md text-label-md mb-6">GET IN TOUCH</span>
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-ink-navy mb-6">Contact Us</h1>
             <p className="font-body-lg text-body-lg text-on-surface-variant">
@@ -26,7 +26,7 @@ export default function ContactPage() {
         </section>
 
         <section className="py-20">
-          <div className="max-w-container-max mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="max-w-container-max mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Contact Details */}
             <div className="space-y-8">
               <h2 className="font-headline-md text-headline-md text-ink-navy">How to Reach Us</h2>

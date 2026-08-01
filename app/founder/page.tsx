@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -11,7 +11,7 @@ export default function FounderPage() {
       <main>
         {/* Hero */}
         <section className="py-20 bg-pink-soft/20">
-          <div className="max-w-container-max mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="max-w-container-max mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-6">
               <span className="inline-block px-4 py-1.5 bg-coral-warm/10 text-coral-warm rounded-full font-label-md text-label-md">
                 MEET THE FOUNDER
@@ -20,11 +20,11 @@ export default function FounderPage() {
                 Zzini Oluchi Ekeh
               </h1>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                TV Host · Producer · Advocate for Girls&apos; Dignity
+                TV Host Â· Producer Â· Advocate for Girls&apos; Dignity
               </p>
               <div className="w-16 h-1.5 bg-coral-warm rounded-full" />
               <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                Zzini Oluchi Ekeh is a television host, producer and the driving force behind iPadAGirl — a nationwide initiative to provide Nigerian schoolgirls with menstrual products, hygiene education and the confidence to navigate puberty with dignity.
+                Zzini Oluchi Ekeh is a television host, producer and the driving force behind iPadAGirl â€” a nationwide initiative to provide Nigerian schoolgirls with menstrual products, hygiene education and the confidence to navigate puberty with dignity.
               </p>
             </div>
             <div className="relative">
@@ -46,7 +46,7 @@ export default function FounderPage() {
 
         {/* Story */}
         <section className="py-20">
-          <div className="max-w-container-max mx-auto px-6">
+          <div className="max-w-container-max mx-auto px-4 md:px-6">
             <div className="max-w-3xl mx-auto">
               <h2 className="font-headline-md text-headline-md text-ink-navy mb-8 text-center">Her Story</h2>
               <div className="space-y-6 font-body-lg text-body-lg text-on-surface-variant">
@@ -56,10 +56,10 @@ export default function FounderPage() {
                   </p>
                 </div>
                 <p>
-                  Those early observations stayed with Zzini. As she grew into her career in media and television production, she never lost sight of the girls she had witnessed struggling silently through adolescence — unable to ask questions, unable to access even the most basic products, and sometimes missing school for days at a time.
+                  Those early observations stayed with Zzini. As she grew into her career in media and television production, she never lost sight of the girls she had witnessed struggling silently through adolescence â€” unable to ask questions, unable to access even the most basic products, and sometimes missing school for days at a time.
                 </p>
                 <p>
-                  In 2026, she turned those memories into action. iPadAGirl launched its maiden outreach at JOAK Secondary School in Ibeju-Lekki, Lagos — reaching 80 girls between JSS1 and SSS3 with complete hygiene kits and practical menstrual health education.
+                  In 2026, she turned those memories into action. iPadAGirl launched its maiden outreach at JOAK Secondary School in Ibeju-Lekki, Lagos â€” reaching 80 girls between JSS1 and SSS3 with complete hygiene kits and practical menstrual health education.
                 </p>
                 <p>
                   The response confirmed what Zzini had always known: the need was urgent, the impact was immediate, and the work was only beginning.
@@ -68,7 +68,7 @@ export default function FounderPage() {
                   <p className="italic font-body-lg text-body-lg">
                     &ldquo;This initiative is about more than distributing sanitary pads. It is about giving girls accurate information, essential hygiene resources and the confidence to understand their bodies without embarrassment. Through iPadAGirl, we want every girl to know that menstruation is natural, her questions are valid, and she deserves to grow into womanhood with dignity.&rdquo;
                   </p>
-                  <p className="mt-4 font-label-md text-coral-warm">— Zzini Oluchi Ekeh, Founder, iPadAGirl</p>
+                  <p className="mt-4 font-label-md text-coral-warm">â€” Zzini Oluchi Ekeh, Founder, iPadAGirl</p>
                 </div>
               </div>
             </div>
@@ -77,7 +77,7 @@ export default function FounderPage() {
 
         {/* Vision */}
         <section className="py-20 bg-surface-container-low">
-          <div className="max-w-container-max mx-auto px-6 text-center">
+          <div className="max-w-container-max mx-auto px-4 md:px-6 text-center">
             <h2 className="font-headline-md text-headline-md text-ink-navy mb-6">Her Vision for 10,000 Girls</h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">
               Zzini&apos;s goal is to reach at least 10,000 schoolgirls across Nigeria, beginning with underserved schools and communities where the need is greatest.
@@ -85,7 +85,7 @@ export default function FounderPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 { icon: "school", title: "Every School", desc: "Partnering with public secondary schools in underserved communities across all 36 states." },
-                { icon: "groups", title: "Every Girl", desc: "Ensuring no girl is left behind — from JSS1 to SSS3, urban or rural, Lagos or beyond." },
+                { icon: "groups", title: "Every Girl", desc: "Ensuring no girl is left behind â€” from JSS1 to SSS3, urban or rural, Lagos or beyond." },
                 { icon: "health_and_safety", title: "Every Cycle", desc: "Providing lasting education so girls are equipped for every month of every year." },
               ].map((item) => (
                 <div key={item.title} className="bg-base-white p-8 rounded-2xl shadow-sm border border-surface-container-high">
@@ -100,7 +100,7 @@ export default function FounderPage() {
 
         {/* CTA */}
         <section className="py-20 bg-coral-warm text-base-white text-center">
-          <div className="max-w-container-max mx-auto px-6 space-y-6">
+          <div className="max-w-container-max mx-auto px-4 md:px-6 space-y-6">
             <h2 className="font-headline-md text-headline-md">Support Zzini&apos;s Mission</h2>
             <p className="font-body-lg text-body-lg opacity-90 max-w-xl mx-auto">
               Every kit you sponsor brings us closer to 10,000 girls reached.

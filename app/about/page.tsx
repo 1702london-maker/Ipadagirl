@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -11,7 +11,7 @@ export default function AboutPage() {
       <main>
         {/* Hero */}
         <section className="py-20 bg-pink-soft/30">
-          <div className="max-w-container-max mx-auto px-6">
+          <div className="max-w-container-max mx-auto px-4 md:px-6">
             <div className="max-w-3xl">
               <span className="inline-block px-4 py-1.5 bg-coral-warm/10 text-coral-warm rounded-full font-label-md text-label-md mb-6">
                 ABOUT IPADAGIRL
@@ -31,14 +31,14 @@ export default function AboutPage() {
 
         {/* Mission / Vision / Goal */}
         <section className="py-20">
-          <div className="max-w-container-max mx-auto px-6">
+          <div className="max-w-container-max mx-auto px-4 md:px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
                   icon: "flag",
                   color: "coral-warm",
                   title: "Our Mission",
-                  body: "To provide schoolgirls — particularly those in underserved communities — with menstrual products, personal hygiene resources and accurate education that enables them to experience adolescence with dignity and confidence.",
+                  body: "To provide schoolgirls â€” particularly those in underserved communities â€” with menstrual products, personal hygiene resources and accurate education that enables them to experience adolescence with dignity and confidence.",
                 },
                 {
                   icon: "visibility",
@@ -67,7 +67,7 @@ export default function AboutPage() {
 
         {/* Core Values */}
         <section className="py-20 bg-ink-navy text-base-white">
-          <div className="max-w-container-max mx-auto px-6">
+          <div className="max-w-container-max mx-auto px-4 md:px-6">
             <div className="text-center mb-16">
               <h2 className="font-headline-md text-headline-md mb-4">Our Core Values</h2>
               <p className="text-surface-variant max-w-2xl mx-auto">
@@ -86,7 +86,7 @@ export default function AboutPage() {
 
         {/* Why the name */}
         <section className="py-20 bg-surface-container-low">
-          <div className="max-w-container-max mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="max-w-container-max mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-6">
               <span className="inline-block px-4 py-1.5 bg-dignity-purple/10 text-dignity-purple rounded-full font-label-md text-label-md">
                 OUR NAME
@@ -94,16 +94,16 @@ export default function AboutPage() {
               <h2 className="font-headline-md text-headline-md text-ink-navy">Why iPadAGirl?</h2>
               <div className="w-16 h-1.5 bg-coral-warm rounded-full" />
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                &ldquo;Pad a Girl&rdquo; represents providing a girl with menstrual protection — but our initiative goes far beyond pads. We support a girl&apos;s complete hygiene, knowledge and confidence.
+                &ldquo;Pad a Girl&rdquo; represents providing a girl with menstrual protection â€” but our initiative goes far beyond pads. We support a girl&apos;s complete hygiene, knowledge and confidence.
               </p>
               <p className="font-body-md text-body-md text-on-surface-variant">
-                The name is a call to action: every time you hear it, you&apos;re being asked to do something — to pad a girl, to give her what she needs to thrive. It captures both the practical and the aspirational sides of our work.
+                The name is a call to action: every time you hear it, you&apos;re being asked to do something â€” to pad a girl, to give her what she needs to thrive. It captures both the practical and the aspirational sides of our work.
               </p>
             </div>
             <div className="bg-pink-soft rounded-3xl p-10 space-y-6">
               <div className="text-6xl font-bold text-coral-warm font-display-lg">i<span className="text-dignity-purple">Pad</span>A<span className="text-wellbeing-teal">Girl</span></div>
               <p className="font-body-md text-on-surface-variant">
-                Each letter carries meaning. The lowercase &ldquo;i&rdquo; echoes the digital era while keeping the focus personal. &ldquo;Pad&rdquo; names the action. &ldquo;A Girl&rdquo; names the beneficiary — every single one of them.
+                Each letter carries meaning. The lowercase &ldquo;i&rdquo; echoes the digital era while keeping the focus personal. &ldquo;Pad&rdquo; names the action. &ldquo;A Girl&rdquo; names the beneficiary â€” every single one of them.
               </p>
             </div>
           </div>
@@ -111,7 +111,7 @@ export default function AboutPage() {
 
         {/* CTA */}
         <section className="py-20 bg-coral-warm text-base-white text-center">
-          <div className="max-w-container-max mx-auto px-6 space-y-6">
+          <div className="max-w-container-max mx-auto px-4 md:px-6 space-y-6">
             <h2 className="font-headline-md text-headline-md">Ready to be part of something meaningful?</h2>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link href="/donate" className="px-8 py-4 bg-base-white text-coral-warm rounded-xl font-bold hover:scale-105 transition-transform">

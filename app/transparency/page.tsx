@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+﻿import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata = { title: "Transparency | iPadAGirl" };
@@ -9,7 +9,7 @@ export default function TransparencyPage() {
       <Navbar />
       <main>
         <section className="py-20 bg-surface-container-low">
-          <div className="max-w-container-max mx-auto px-6 max-w-3xl">
+          <div className="max-w-container-max mx-auto px-4 md:px-6 max-w-3xl">
             <span className="inline-block px-4 py-1.5 bg-wellbeing-teal/10 text-wellbeing-teal rounded-full font-label-md text-label-md mb-6">ACCOUNTABILITY</span>
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-ink-navy mb-6">Transparency</h1>
             <p className="font-body-lg text-body-lg text-on-surface-variant">
@@ -19,7 +19,7 @@ export default function TransparencyPage() {
         </section>
 
         <section className="py-20">
-          <div className="max-w-container-max mx-auto px-6">
+          <div className="max-w-container-max mx-auto px-4 md:px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
               {[
                 { icon: "analytics", color: "wellbeing-teal", title: "Impact Reports", desc: "Quarterly and annual reports showing funds received, products donated, schools visited and programme outcomes." },
@@ -45,7 +45,7 @@ export default function TransparencyPage() {
             {/* Allocation Display */}
             <div className="bg-ink-navy text-base-white rounded-3xl p-8 md:p-12">
               <h2 className="font-headline-md text-headline-md mb-2">How Your Donation Is Used</h2>
-              <p className="text-surface-variant font-body-md mb-10">Indicative allocation — final figures are published in each impact report.</p>
+              <p className="text-surface-variant font-body-md mb-10">Indicative allocation â€” final figures are published in each impact report.</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {[
                   { pct: 55, label: "Hygiene Products", color: "bg-coral-warm" },
@@ -70,7 +70,7 @@ export default function TransparencyPage() {
 
         {/* Complaints */}
         <section className="py-20 bg-surface-container-low">
-          <div className="max-w-container-max mx-auto px-6 max-w-2xl">
+          <div className="max-w-container-max mx-auto px-4 md:px-6 max-w-2xl">
             <h2 className="font-headline-md text-headline-md text-ink-navy mb-6">Complaints Procedure</h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant mb-8">
               We are committed to addressing concerns from donors, volunteers, schools and community members promptly and fairly.

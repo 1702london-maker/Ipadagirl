@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import CounterStrip from "./components/CounterStrip";
@@ -11,7 +11,7 @@ export default function Home() {
         {/* Hero */}
         <section className="relative overflow-hidden pt-20 pb-32 bg-base-white">
           <div className="absolute top-0 right-0 w-1/3 h-full bg-pink-soft/50 rounded-l-[100px] -z-10 translate-x-20" />
-          <div className="max-w-container-max mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="max-w-container-max mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <span className="inline-block px-4 py-1.5 bg-dignity-purple/10 text-dignity-purple rounded-full font-label-md text-label-md">
                 NIGERIA-WIDE INITIATIVE
@@ -65,7 +65,7 @@ export default function Home() {
 
         {/* Problem */}
         <section className="py-20 bg-pink-soft/30">
-          <div className="max-w-container-max mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="max-w-container-max mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative rounded-3xl overflow-hidden shadow-xl aspect-video lg:aspect-square">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -113,7 +113,7 @@ export default function Home() {
 
         {/* Services */}
         <section className="py-20">
-          <div className="max-w-container-max mx-auto px-6">
+          <div className="max-w-container-max mx-auto px-4 md:px-6">
             <div className="text-center mb-16">
               <h2 className="font-headline-md text-headline-md text-ink-navy mb-4">Our Core Pillars of Impact</h2>
               <p className="text-on-surface-variant max-w-2xl mx-auto">We provide a holistic approach to menstrual health that goes beyond just distribution.</p>
@@ -145,7 +145,7 @@ export default function Home() {
           <div className="absolute top-0 right-0 p-20 opacity-10 pointer-events-none">
             <span className="material-symbols-outlined" style={{ fontSize: "300px" }}>sanitizer</span>
           </div>
-          <div className="max-w-container-max mx-auto px-6 relative z-10">
+          <div className="max-w-container-max mx-auto px-4 md:px-6 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
                 <h2 className="font-headline-md text-headline-md mb-6">Inside Our Dignity Kit</h2>
@@ -178,7 +178,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="absolute -bottom-6 -right-6 p-6 bg-wellbeing-teal rounded-2xl shadow-xl hidden md:block">
-                  <div className="text-headline-sm font-bold">₦7,500</div>
+                  <div className="text-headline-sm font-bold">â‚¦7,500</div>
                   <div className="text-label-md opacity-80">Cost per Kit</div>
                 </div>
               </div>
@@ -188,7 +188,7 @@ export default function Home() {
 
         {/* Founder Preview */}
         <section className="py-20">
-          <div className="max-w-container-max mx-auto px-6">
+          <div className="max-w-container-max mx-auto px-4 md:px-6">
             <div className="bg-pink-soft rounded-[48px] p-8 md:p-20 flex flex-col lg:flex-row items-center gap-16">
               <div className="w-full lg:w-1/3">
                 <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl -rotate-3">
@@ -206,7 +206,7 @@ export default function Home() {
                   &ldquo;Inspired by Experience. Built for Every Girl.&rdquo;
                 </h2>
                 <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-                  iPadAGirl wasn&apos;t just born out of a desire to do good — it was born out of a lived reality. Growing up, our founder Zzini Oluchi Ekeh witnessed firsthand how something as natural as a period could become a source of profound fear and educational setback.
+                  iPadAGirl wasn&apos;t just born out of a desire to do good â€” it was born out of a lived reality. Growing up, our founder Zzini Oluchi Ekeh witnessed firsthand how something as natural as a period could become a source of profound fear and educational setback.
                 </p>
                 <p className="font-body-md text-body-md text-on-surface-variant">
                   She remembers the hushed whispers, the improvised solutions, and the girls who simply stopped showing up to school. Today, she is leading a movement to ensure that no girl has to repeat those experiences.
@@ -221,7 +221,7 @@ export default function Home() {
 
         {/* Latest Outreach */}
         <section className="py-20 bg-base-white">
-          <div className="max-w-container-max mx-auto px-6">
+          <div className="max-w-container-max mx-auto px-4 md:px-6">
             <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
               <div>
                 <h2 className="font-headline-md text-headline-md text-ink-navy mb-2">Our Latest Impact</h2>
@@ -250,7 +250,7 @@ export default function Home() {
                 </div>
                 <div className="p-6 border-l-4 border-coral-warm bg-pink-soft/20 rounded-r-2xl">
                   <p className="font-body-md italic text-ink-navy">&ldquo;The education part was eye-opening. Most girls here only learn from rumors. Now they know the truth about their bodies.&rdquo;</p>
-                  <p className="mt-2 font-label-md text-on-surface-variant">— School Principal</p>
+                  <p className="mt-2 font-label-md text-on-surface-variant">â€” School Principal</p>
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4">
@@ -272,7 +272,7 @@ export default function Home() {
 
         {/* CTA */}
         <section className="py-24 bg-coral-warm text-base-white">
-          <div className="max-w-container-max mx-auto px-6 text-center space-y-10">
+          <div className="max-w-container-max mx-auto px-4 md:px-6 text-center space-y-10">
             <h2 className="font-display-lg text-display-lg-mobile md:text-headline-md max-w-3xl mx-auto">
               Your Support Can Keep a Girl in School and Build Her Future
             </h2>

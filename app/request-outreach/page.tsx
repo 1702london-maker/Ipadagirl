@@ -9,7 +9,7 @@ export default function RequestOutreachPage() {
       <Navbar />
       <main>
         <section className="py-20 bg-pink-soft/30">
-          <div className="max-w-container-max mx-auto px-6">
+          <div className="max-w-container-max mx-auto px-4 md:px-6">
             <span className="inline-block px-4 py-1.5 bg-coral-warm/10 text-coral-warm rounded-full font-label-md text-label-md mb-6">SCHOOL APPLICATIONS</span>
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-ink-navy mb-6">Request an Outreach</h1>
             <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
@@ -19,7 +19,7 @@ export default function RequestOutreachPage() {
         </section>
 
         <section className="py-20">
-          <div className="max-w-container-max mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-16">
+          <div className="max-w-container-max mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-3 gap-16">
             <div className="space-y-6">
               <h2 className="font-headline-sm text-headline-sm text-ink-navy">What to Expect</h2>
               {[

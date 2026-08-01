@@ -9,7 +9,7 @@ export default function VolunteerPage() {
       <Navbar />
       <main>
         <section className="py-20 bg-wellbeing-teal/10">
-          <div className="max-w-container-max mx-auto px-6 max-w-3xl">
+          <div className="max-w-container-max mx-auto px-4 md:px-6 max-w-3xl">
             <span className="inline-block px-4 py-1.5 bg-wellbeing-teal/10 text-wellbeing-teal rounded-full font-label-md text-label-md mb-6">JOIN THE TEAM</span>
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-ink-navy mb-6">Volunteer with iPadAGirl</h1>
             <p className="font-body-lg text-body-lg text-on-surface-variant">
@@ -19,7 +19,7 @@ export default function VolunteerPage() {
         </section>
 
         <section className="py-20">
-          <div className="max-w-container-max mx-auto px-6">
+          <div className="max-w-container-max mx-auto px-4 md:px-6">
             <h2 className="font-headline-md text-headline-md text-ink-navy mb-12 text-center">Volunteer Opportunities</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
@@ -43,7 +43,7 @@ export default function VolunteerPage() {
         </section>
 
         <section className="py-20 bg-surface-container-low">
-          <div className="max-w-container-max mx-auto px-6">
+          <div className="max-w-container-max mx-auto px-4 md:px-6">
             <div className="max-w-2xl mx-auto">
               <h2 className="font-headline-md text-headline-md text-ink-navy mb-4 text-center">Register as a Volunteer</h2>
               <p className="text-on-surface-variant text-center mb-10">Volunteers working directly with children must provide valid ID and complete a safeguarding briefing before any outreach.</p>

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
@@ -53,7 +53,7 @@ function Counter({ end, suffix, prefix }: { end: number; suffix: string; prefix:
 export default function CounterStrip() {
   return (
     <section className="bg-ink-navy py-16">
-      <div className="max-w-container-max mx-auto px-6">
+      <div className="max-w-container-max mx-auto px-4 md:px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, i) => (
             <div key={i} className={`text-center ${i < 3 ? "md:border-r border-white/10" : ""}`}>

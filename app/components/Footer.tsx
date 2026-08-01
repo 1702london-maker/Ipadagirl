@@ -3,7 +3,7 @@
 export default function Footer() {
   return (
     <footer className="bg-ink-navy text-base-white py-20">
-      <div className="max-w-container-max mx-auto px-6">
+      <div className="max-w-container-max mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-16">
           {/* Brand */}
           <div className="md:col-span-2 space-y-6">

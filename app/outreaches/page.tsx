@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -10,24 +10,24 @@ export default function OutreachesPage() {
       <Navbar />
       <main>
         <section className="py-20 bg-pink-soft/30">
-          <div className="max-w-container-max mx-auto px-6">
+          <div className="max-w-container-max mx-auto px-4 md:px-6">
             <span className="inline-block px-4 py-1.5 bg-wellbeing-teal/10 text-wellbeing-teal rounded-full font-label-md text-label-md mb-6">OUR OUTREACHES</span>
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-ink-navy mb-6">School Outreaches</h1>
             <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-              A full archive of all iPadAGirl school and community outreaches — past and upcoming.
+              A full archive of all iPadAGirl school and community outreaches â€” past and upcoming.
             </p>
           </div>
         </section>
 
         {/* Upcoming */}
         <section className="py-20">
-          <div className="max-w-container-max mx-auto px-6">
+          <div className="max-w-container-max mx-auto px-4 md:px-6">
             <h2 className="font-headline-md text-headline-md text-ink-navy mb-8">Upcoming Outreaches</h2>
             <div className="bg-dignity-purple/5 border border-dignity-purple/20 rounded-3xl p-8 md:p-12">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
                   <span className="inline-block px-4 py-1.5 bg-dignity-purple/10 text-dignity-purple rounded-full font-label-md text-label-md">SEPTEMBER 2026</span>
-                  <h3 className="font-headline-sm text-headline-sm text-ink-navy">Next School Outreach — TBC</h3>
+                  <h3 className="font-headline-sm text-headline-sm text-ink-navy">Next School Outreach â€” TBC</h3>
                   <p className="font-body-md text-on-surface-variant">
                     Our next outreach is planned for September 2026, timed around the reopening of schools after the summer break. Schools in Lagos and surrounding states are invited to apply for a visit.
                   </p>
@@ -55,7 +55,7 @@ export default function OutreachesPage() {
                 </div>
                 <div className="bg-dignity-purple/10 rounded-2xl p-8 space-y-4">
                   <h4 className="font-headline-sm text-dignity-purple">What We Still Need</h4>
-                  {["Hygiene kit sponsorships (₦7,500 each)", "Transportation support", "Volunteer facilitators", "School host in Lagos or nearby state"].map((item) => (
+                  {["Hygiene kit sponsorships (â‚¦7,500 each)", "Transportation support", "Volunteer facilitators", "School host in Lagos or nearby state"].map((item) => (
                     <div key={item} className="flex items-center gap-3">
                       <span className="material-symbols-outlined text-dignity-purple text-[20px]">radio_button_unchecked</span>
                       <p className="font-body-md text-on-surface-variant">{item}</p>
@@ -69,7 +69,7 @@ export default function OutreachesPage() {
 
         {/* Past Outreaches */}
         <section className="py-20 bg-surface-container-low">
-          <div className="max-w-container-max mx-auto px-6">
+          <div className="max-w-container-max mx-auto px-4 md:px-6">
             <h2 className="font-headline-md text-headline-md text-ink-navy mb-8">Past Outreaches</h2>
             <div className="bg-base-white rounded-3xl overflow-hidden border border-surface-container-high shadow-sm">
               <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -82,13 +82,13 @@ export default function OutreachesPage() {
                   />
                 </div>
                 <div className="p-8 md:p-12 space-y-6">
-                  <span className="inline-block px-3 py-1 bg-wellbeing-teal/10 text-wellbeing-teal rounded-lg font-label-md">MAIDEN OUTREACH · JULY 2026</span>
+                  <span className="inline-block px-3 py-1 bg-wellbeing-teal/10 text-wellbeing-teal rounded-lg font-label-md">MAIDEN OUTREACH Â· JULY 2026</span>
                   <h3 className="font-headline-sm text-headline-sm text-ink-navy">JOAK Secondary School</h3>
                   <p className="font-body-md text-on-surface-variant">Okun-Idado, Free Trade Zone, Ibeju-Lekki, Lagos State</p>
                   <div className="grid grid-cols-2 gap-4">
                     {[
                       { label: "Girls Reached", value: "80" },
-                      { label: "Classes", value: "JSS1–SSS3" },
+                      { label: "Classes", value: "JSS1â€“SSS3" },
                       { label: "Kits Distributed", value: "80" },
                       { label: "Sessions", value: "1 full day" },
                     ].map((stat) => (
@@ -114,7 +114,7 @@ export default function OutreachesPage() {
         </section>
 
         <section className="py-16 bg-coral-warm text-base-white text-center">
-          <div className="max-w-container-max mx-auto px-6 space-y-4">
+          <div className="max-w-container-max mx-auto px-4 md:px-6 space-y-4">
             <h2 className="font-headline-sm text-headline-sm">Is your school ready for an outreach?</h2>
             <Link href="/request-outreach" className="inline-block px-8 py-4 bg-base-white text-coral-warm rounded-xl font-bold hover:scale-105 transition-transform">
               Request an Outreach
