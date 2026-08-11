@@ -117,12 +117,12 @@ export default function TeamPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               {team.slice(1).map((member) => (
                 <div key={member.name} className="bg-base-white rounded-3xl border border-surface-container-high shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-                  <div className="aspect-[16/9] overflow-hidden">
+                  <div className="w-full">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="w-full h-full object-cover object-top"
+                      className="w-full h-auto object-contain"
                     />
                   </div>
                   <div className="p-8 space-y-4">
