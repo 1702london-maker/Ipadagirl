@@ -113,10 +113,10 @@ export default function ImpactPage() {
         {/* Next Outreach */}
         <section className="py-20 bg-dignity-purple text-base-white text-center">
           <div className="max-w-container-max mx-auto px-4 md:px-6 space-y-6">
-            <span className="inline-block px-4 py-1.5 bg-white/10 text-white rounded-full font-label-md text-label-md">UPCOMING</span>
-            <h2 className="font-headline-md text-headline-md">Next Outreach — September 2026</h2>
+            <span className="inline-block px-4 py-1.5 bg-white/10 text-white rounded-full font-label-md text-label-md">NEXT STOP</span>
+            <h2 className="font-headline-md text-headline-md">Ibadan — Next Outreach</h2>
             <p className="font-body-lg text-body-lg opacity-90 max-w-2xl mx-auto">
-              Our next outreach is planned for September 2026, timed around the reopening of schools after the summer break. We are looking for schools to host us and donors to make it possible.
+              We are heading to Ibadan. The mission continues — more girls, more kits, more education. We are looking for schools to host us and donors to make it possible.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link href="/request-outreach" className="px-8 py-4 bg-base-white text-dignity-purple rounded-xl font-bold hover:scale-105 transition-transform">

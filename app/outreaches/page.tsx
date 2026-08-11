@@ -26,17 +26,17 @@ export default function OutreachesPage() {
             <div className="bg-dignity-purple/5 border border-dignity-purple/20 rounded-3xl p-8 md:p-12">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
-                  <span className="inline-block px-4 py-1.5 bg-dignity-purple/10 text-dignity-purple rounded-full font-label-md text-label-md">SEPTEMBER 2026</span>
-                  <h3 className="font-headline-sm text-headline-sm text-ink-navy">Next School Outreach — TBC</h3>
+                  <span className="inline-block px-4 py-1.5 bg-dignity-purple/10 text-dignity-purple rounded-full font-label-md text-label-md">NEXT STOP</span>
+                  <h3 className="font-headline-sm text-headline-sm text-ink-navy">Ibadan — Coming Soon</h3>
                   <p className="font-body-md text-on-surface-variant">
-                    Our next outreach is planned for September 2026, timed around the reopening of schools after the summer break. Schools in Lagos and surrounding states are invited to apply for a visit.
+                    Project iPadAGirl is heading to Ibadan. Schools in Oyo State are invited to apply for a visit. Let&apos;s pad a girl together.
                   </p>
                   <div className="grid grid-cols-2 gap-4">
                     {[
                       { label: "Target Girls", value: "100+" },
                       { label: "Kits Needed", value: "100+" },
                       { label: "Volunteers", value: "10+" },
-                      { label: "States", value: "Lagos" },
+                      { label: "Location", value: "Ibadan" },
                     ].map((stat) => (
                       <div key={stat.label} className="bg-base-white p-4 rounded-xl border border-surface-container-high">
                         <div className="font-headline-sm text-ink-navy">{stat.value}</div>
