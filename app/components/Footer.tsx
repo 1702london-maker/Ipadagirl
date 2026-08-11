@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const socials = [
   { label: "Instagram", icon: "photo_camera", href: "https://www.instagram.com/padagirlwithzzini" },
-  { label: "Facebook", icon: "group", href: "https://www.facebook.com/padagirlwithzzini" },
+  { label: "Facebook", icon: "group", href: "https://web.facebook.com/profile.php?id=61592765517960" },
   { label: "TikTok", icon: "music_note", href: "https://www.tiktok.com/@padagirlwithzzini" },
   { label: "YouTube", icon: "play_circle", href: "https://www.youtube.com/@padagirlwithzzini" },
   { label: "LinkedIn", icon: "business", href: "https://www.linkedin.com/company/padagirlwithzzini" },

@@ -8,7 +8,7 @@ export default function ContactPage() {
     { icon: "phone", label: "Phone", value: "+234 916 945 7000", href: "tel:+2349169457000" },
     { icon: "mail", label: "Email", value: "letspadagirlnow@gmail.com", href: "mailto:letspadagirlnow@gmail.com" },
     { icon: "photo_camera", label: "Instagram", value: "@PadagirlwithZzini", href: "https://www.instagram.com/padagirlwithzzini" },
-    { icon: "group", label: "Facebook", value: "PadagirlwithZzini", href: "https://www.facebook.com/padagirlwithzzini" },
+    { icon: "group", label: "Facebook", value: "PadagirlwithZzini", href: "https://web.facebook.com/profile.php?id=61592765517960" },
     { icon: "music_note", label: "TikTok", value: "@PadagirlwithZzini", href: "https://www.tiktok.com/@padagirlwithzzini" },
     { icon: "business", label: "LinkedIn", value: "PadagirlwithZzini", href: "https://www.linkedin.com/company/padagirlwithzzini" },
   ];
