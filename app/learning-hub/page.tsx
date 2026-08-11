@@ -9,12 +9,12 @@ const topics = [
   { icon: "calendar_month", title: "Understanding Your Cycle", desc: "Learn how to track your period, understand what's normal, and what changes to look out for." },
   { icon: "redeem", title: "How to Use a Sanitary Pad", desc: "Step-by-step: how to apply, wear, change and dispose of a pad correctly and hygienically." },
   { icon: "soap", title: "Staying Clean During Your Period", desc: "Simple, practical hygiene steps to stay fresh, comfortable and healthy during your cycle." },
-  { icon: "medical_information", title: "Managing Period Pain", desc: "Cramps are common. Here's how to manage them safely â€” and when to speak to a trusted adult." },
+  { icon: "medical_information", title: "Managing Period Pain", desc: "Cramps are common. Here's how to manage them safely "” and when to speak to a trusted adult." },
   { icon: "psychology", title: "Body Changes & Confidence", desc: "Puberty affects your emotions too. Understanding how to talk to yourself kindly is part of growing up." },
   { icon: "groups", title: "Supporting a Friend", desc: "If a friend is struggling with her period, here's how to help without making her feel embarrassed." },
   { icon: "quiz", title: "Questions Girls Are Afraid to Ask", desc: "Real questions, honest answers. Nothing is too embarrassing here. We've heard it all." },
   { icon: "warning", title: "When to Speak to an Adult", desc: "There are times when you need support from a parent, teacher or health professional. Here's when and how." },
-  { icon: "cancel", title: "Period Myths â€” Busted", desc: "Swimming, exercise, cooking food â€” let's clear up the myths that have caused unnecessary shame for generations." },
+  { icon: "cancel", title: "Period Myths "” Busted", desc: "Swimming, exercise, cooking food "” let's clear up the myths that have caused unnecessary shame for generations." },
   { icon: "backpack", title: "Your Period Emergency Bag", desc: "What to keep in your bag so you're always prepared, wherever you are." },
 ];
 
@@ -28,7 +28,7 @@ export default function LearningHubPage() {
             <span className="inline-block px-4 py-1.5 bg-dignity-purple/10 text-dignity-purple rounded-full font-label-md text-label-md mb-6">SAFE SPACE</span>
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-ink-navy mb-6">Girls&apos; Learning Hub</h1>
             <p className="font-body-lg text-body-lg text-on-surface-variant">
-              A safe, friendly space where you can learn everything about puberty, menstruation and growing up â€” in plain language, with no judgement. All content is age-appropriate and medically reviewed.
+              A safe, friendly space where you can learn everything about puberty, menstruation and growing up "” in plain language, with no judgement. All content is age-appropriate and medically reviewed.
             </p>
           </div>
         </section>
@@ -63,9 +63,9 @@ export default function LearningHubPage() {
               <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6 text-left space-y-2">
                 <p className="font-label-md text-amber-800">Important Reminders:</p>
                 <ul className="space-y-1 text-sm text-amber-700">
-                  <li>â€¢ This service does not replace professional medical advice.</li>
-                  <li>â€¢ Do not share your name, school or personal details.</li>
-                  <li>â€¢ If you need urgent help, speak to a trusted adult or health professional.</li>
+                  <li>• This service does not replace professional medical advice.</li>
+                  <li>• Do not share your name, school or personal details.</li>
+                  <li>• If you need urgent help, speak to a trusted adult or health professional.</li>
                 </ul>
               </div>
               <form className="text-left space-y-4">

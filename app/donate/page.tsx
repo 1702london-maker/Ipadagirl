@@ -83,7 +83,7 @@ export default function DonatePage() {
                 <div className="w-full h-2 bg-pink-soft rounded-full overflow-hidden mt-8">
                   <div className="w-1 h-full bg-coral-warm rounded-full" />
                 </div>
-                <p className="font-label-md text-center text-on-surface-variant uppercase tracking-wider">First outreach funded â€” help us reach more</p>
+                <p className="font-label-md text-center text-on-surface-variant uppercase tracking-wider">First outreach funded "” help us reach more</p>
               </div>
             </div>
           </div>

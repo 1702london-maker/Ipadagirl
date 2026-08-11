@@ -96,10 +96,10 @@ export default function AboutPage() {
               <h2 className="font-headline-md text-headline-md text-ink-navy">Why iPadAGirl?</h2>
               <div className="w-16 h-1.5 bg-coral-warm rounded-full" />
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                &ldquo;Pad a Girl&rdquo; represents providing a girl with menstrual protection â€” but our initiative goes far beyond pads. We support a girl&apos;s complete hygiene, knowledge and confidence.
+                &ldquo;Pad a Girl&rdquo; represents providing a girl with menstrual protection — but our initiative goes far beyond pads. We support a girl&apos;s complete hygiene, knowledge and confidence.
               </p>
               <p className="font-body-md text-body-md text-on-surface-variant">
-                The name is a call to action: every time you hear it, you&apos;re being asked to do something â€” to pad a girl, to give her what she needs to thrive. It captures both the practical and the aspirational sides of our work.
+                The name is a call to action: every time you hear it, you&apos;re being asked to do something — to pad a girl, to give her what she needs to thrive. It captures both the practical and the aspirational sides of our work.
               </p>
             </div>
             <div className="bg-pink-soft rounded-3xl p-10 space-y-6">

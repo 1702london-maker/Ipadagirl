@@ -14,7 +14,7 @@ export default function OutreachesPage() {
             <span className="inline-block px-4 py-1.5 bg-wellbeing-teal/10 text-wellbeing-teal rounded-full font-label-md text-label-md mb-6">OUR OUTREACHES</span>
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-ink-navy mb-6">School Outreaches</h1>
             <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-              A full archive of all iPadAGirl school and community outreaches â€” past and upcoming.
+              A full archive of all iPadAGirl school and community outreaches "” past and upcoming.
             </p>
           </div>
         </section>
@@ -27,7 +27,7 @@ export default function OutreachesPage() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
                   <span className="inline-block px-4 py-1.5 bg-dignity-purple/10 text-dignity-purple rounded-full font-label-md text-label-md">SEPTEMBER 2026</span>
-                  <h3 className="font-headline-sm text-headline-sm text-ink-navy">Next School Outreach â€” TBC</h3>
+                  <h3 className="font-headline-sm text-headline-sm text-ink-navy">Next School Outreach "” TBC</h3>
                   <p className="font-body-md text-on-surface-variant">
                     Our next outreach is planned for September 2026, timed around the reopening of schools after the summer break. Schools in Lagos and surrounding states are invited to apply for a visit.
                   </p>
@@ -88,7 +88,7 @@ export default function OutreachesPage() {
                   <div className="grid grid-cols-2 gap-4">
                     {[
                       { label: "Girls Reached", value: "80" },
-                      { label: "Classes", value: "JSS1â€“SSS3" },
+                      { label: "Classes", value: "JSS1"“SSS3" },
                       { label: "Kits Distributed", value: "80" },
                       { label: "Sessions", value: "1 full day" },
                     ].map((stat) => (
