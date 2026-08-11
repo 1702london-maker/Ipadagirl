@@ -291,9 +291,20 @@ export default function Home() {
             </div>
             <div className="pt-8">
               <p className="font-label-md uppercase tracking-widest opacity-80 mb-4">Secured Payments Powered By</p>
-              <div className="flex justify-center items-center gap-8 opacity-60">
-                <span className="font-bold text-headline-sm">PAYSTACK</span>
-                <span className="font-bold text-headline-sm">FLUTTERWAVE</span>
+              <div className="flex justify-center items-center gap-8 opacity-70">
+                {/* Paystack logo */}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 30" width="120" height="30" fill="currentColor" aria-label="Paystack">
+                  <circle cx="8" cy="15" r="5" fill="#00C3F7"/>
+                  <circle cx="20" cy="15" r="5" fill="#011B33" opacity="0.85"/>
+                  <text x="32" y="20" fontFamily="Arial,sans-serif" fontWeight="700" fontSize="15" fill="currentColor">Paystack</text>
+                </svg>
+                <span className="w-px h-6 bg-current opacity-30" />
+                {/* Flutterwave logo */}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 30" width="150" height="30" fill="currentColor" aria-label="Flutterwave">
+                  <path d="M4 22 Q8 8 14 15 Q20 22 26 8" stroke="#F5A623" strokeWidth="3" fill="none" strokeLinecap="round"/>
+                  <path d="M8 22 Q12 10 18 17 Q24 22 30 10" stroke="#E03A3C" strokeWidth="3" fill="none" strokeLinecap="round"/>
+                  <text x="38" y="20" fontFamily="Arial,sans-serif" fontWeight="700" fontSize="14" fill="currentColor">Flutterwave</text>
+                </svg>
               </div>
             </div>
           </div>
