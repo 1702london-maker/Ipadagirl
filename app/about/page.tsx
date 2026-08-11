@@ -86,6 +86,12 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* Photo banner */}
+        <section className="h-64 md:h-80 overflow-hidden">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/outreach/MMC08242.jpg" alt="Girls at iPadAGirl outreach" className="w-full h-full object-cover object-center" />
+        </section>
+
         {/* Why the name */}
         <section className="py-20 bg-surface-container-low">
           <div className="max-w-container-max mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

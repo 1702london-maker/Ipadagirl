@@ -125,9 +125,10 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between gap-4 text-surface-variant text-label-md">
           <p>© 2026 Project iPadAGirl. Empowering health and education through social progress.</p>
           <div className="flex flex-wrap gap-4">
-            {["Privacy Policy", "Safeguarding Policy", "Terms of Use", "Contact"].map((item) => (
-              <a key={item} href="#" className="hover:text-coral-warm transition-colors">{item}</a>
-            ))}
+            <Link href="/privacy-policy" className="hover:text-coral-warm transition-colors">Privacy Policy</Link>
+            <Link href="/safeguarding-policy" className="hover:text-coral-warm transition-colors">Safeguarding Policy</Link>
+            <Link href="/terms-of-use" className="hover:text-coral-warm transition-colors">Terms of Use</Link>
+            <Link href="/contact" className="hover:text-coral-warm transition-colors">Contact</Link>
           </div>
         </div>
       </div>

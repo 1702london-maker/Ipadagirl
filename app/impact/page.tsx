@@ -31,6 +31,23 @@ export default function ImpactPage() {
           </div>
         </section>
 
+        {/* Photo strip */}
+        <section className="py-0">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
+            {[
+              "/images/outreach/MMC08165.jpg",
+              "/images/outreach/MMC08168.jpg",
+              "/images/outreach/MMC08169.jpg",
+              "/images/outreach/MMC08171.jpg",
+            ].map((src, i) => (
+              <div key={i} className="aspect-video overflow-hidden">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={src} alt="iPadAGirl outreach moment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Stats */}
         <section className="py-20 bg-base-white">
           <div className="max-w-container-max mx-auto px-4 md:px-6">
