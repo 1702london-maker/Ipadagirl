@@ -51,7 +51,7 @@ export default function WhatWeDoPage() {
             </div>
             <div className="rounded-3xl overflow-hidden shadow-xl aspect-square">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUHIqPCeeNobsZ3pdYntkzK0eXpWbG-tBsg6HSkG9U6bU_Wu8j1bHoz6miMgEY_9DgSFCwgUvuygM5oP09MV1vDY_RofGUYsXNwoCEcA-tdavBicy-e5BvXoGeGnAINLuEgdMaqZaWObkh8wr_ENCS7fBHK51pX4FNk_Z5OdHSIGIvARoB8VV_Vm4e-guVxZ2VlANfVbGZhBJcNVAfZjN4XH1YknhK3vk5NTQnaxRvxdQZl6vP77s0Gg" alt="School outreach session" className="w-full h-full object-cover" />
+              <img src="/images/outreach/MMC08063.jpg" alt="School outreach session" className="w-full h-full object-cover" />
             </div>
           </div>
         </section>
