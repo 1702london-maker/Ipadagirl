@@ -24,8 +24,8 @@ export default function Home() {
                 AFRICA-WIDE INITIATIVE
               </span>
               <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg leading-tight text-ink-navy">
-                Empowering Every Girl to Grow with{" "}
-                <span className="text-coral-warm italic">Dignity</span>
+                Building Confidence{" "}
+                <span className="text-coral-warm italic">One Girl at a Time</span>
               </h1>
               <p className="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
                 Project iPadAGirl is helping schoolgirls across Africa access menstrual
