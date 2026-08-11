@@ -1,4 +1,4 @@
-﻿import Navbar from "../components/Navbar";
+﻿﻿import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata = { title: "Transparency | iPadAGirl" };
@@ -45,7 +45,7 @@ export default function TransparencyPage() {
             {/* Allocation Display */}
             <div className="bg-ink-navy text-base-white rounded-3xl p-8 md:p-12">
               <h2 className="font-headline-md text-headline-md mb-2">How Your Donation Is Used</h2>
-              <p className="text-surface-variant font-body-md mb-10">Indicative allocation "” final figures are published in each impact report.</p>
+              <p className="text-surface-variant font-body-md mb-10">Indicative allocation — final figures are published in each impact report.</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {[
                   { pct: 55, label: "Hygiene Products", color: "bg-coral-warm" },

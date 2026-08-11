@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+﻿﻿import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -20,18 +20,18 @@ export default function FounderPage() {
                 Zzini Oluchi Ekeh
               </h1>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                TV Host Â· Producer Â· Advocate for Girls&apos; Dignity
+                TV Host · Producer · Advocate for Girls&apos; Dignity
               </p>
               <div className="w-16 h-1.5 bg-coral-warm rounded-full" />
               <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                Zzini Oluchi Ekeh is a television host, producer and the driving force behind iPadAGirl "” a nationwide initiative to provide Nigerian schoolgirls with menstrual products, hygiene education and the confidence to navigate puberty with dignity.
+                Zzini Oluchi Ekeh is a television host, producer and the driving force behind iPadAGirl — a nationwide initiative to provide Nigerian schoolgirls with menstrual products, hygiene education and the confidence to navigate puberty with dignity.
               </p>
             </div>
             <div className="relative">
               <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDnp36dqltJ-QBp9iUOcT9mCBEE6R5wSBa_mZsr_57qW29qOAjQTCjQBovLLJDTvk-oHRR8UKl8vYLMQZOtRPtCchf58nmYG3jd92YA6nSbyWL1DgRBqQX8NZ8scbG7R91PlLzvGgaMzwI2C0A-t2IWL_tRBelG1NlRzED-wyopmvu_MNPpjqLn0c2Y9Sr6vpWZhtzsmFzeVlmfTPtt_BAkGa9p0-ebFO9XbZWpIWwbUpQe6D5DP3jCg"
+                  src="/images/outreach/MMC08145.jpg"
                   alt="Zzini Oluchi Ekeh, Founder of iPadAGirl"
                   className="w-full h-full object-cover"
                 />
@@ -56,10 +56,10 @@ export default function FounderPage() {
                   </p>
                 </div>
                 <p>
-                  Those early observations stayed with Zzini. As she grew into her career in media and television production, she never lost sight of the girls she had witnessed struggling silently through adolescence "” unable to ask questions, unable to access even the most basic products, and sometimes missing school for days at a time.
+                  Those early observations stayed with Zzini. As she grew into her career in media and television production, she never lost sight of the girls she had witnessed struggling silently through adolescence — unable to ask questions, unable to access even the most basic products, and sometimes missing school for days at a time.
                 </p>
                 <p>
-                  In 2026, she turned those memories into action. iPadAGirl launched its maiden outreach at JOAK Secondary School in Ibeju-Lekki, Lagos "” reaching 80 girls between JSS1 and SSS3 with complete hygiene kits and practical menstrual health education.
+                  In 2026, she turned those memories into action. iPadAGirl launched its maiden outreach at JOAK Secondary School in Ibeju-Lekki, Lagos — reaching 80 girls between JSS1 and SSS3 with complete hygiene kits and practical menstrual health education.
                 </p>
                 <p>
                   The response confirmed what Zzini had always known: the need was urgent, the impact was immediate, and the work was only beginning.
@@ -68,7 +68,7 @@ export default function FounderPage() {
                   <p className="italic font-body-lg text-body-lg">
                     &ldquo;This initiative is about more than distributing sanitary pads. It is about giving girls accurate information, essential hygiene resources and the confidence to understand their bodies without embarrassment. Through iPadAGirl, we want every girl to know that menstruation is natural, her questions are valid, and she deserves to grow into womanhood with dignity.&rdquo;
                   </p>
-                  <p className="mt-4 font-label-md text-coral-warm">"” Zzini Oluchi Ekeh, Founder, iPadAGirl</p>
+                  <p className="mt-4 font-label-md text-coral-warm">— Zzini Oluchi Ekeh, Founder, iPadAGirl</p>
                 </div>
               </div>
             </div>
@@ -85,7 +85,7 @@ export default function FounderPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 { icon: "school", title: "Every School", desc: "Partnering with public secondary schools in underserved communities across all 36 states." },
-                { icon: "groups", title: "Every Girl", desc: "Ensuring no girl is left behind "” from JSS1 to SSS3, urban or rural, Lagos or beyond." },
+                { icon: "groups", title: "Every Girl", desc: "Ensuring no girl is left behind — from JSS1 to SSS3, urban or rural, Lagos or beyond." },
                 { icon: "health_and_safety", title: "Every Cycle", desc: "Providing lasting education so girls are equipped for every month of every year." },
               ].map((item) => (
                 <div key={item.title} className="bg-base-white p-8 rounded-2xl shadow-sm border border-surface-container-high">

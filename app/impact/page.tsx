@@ -1,4 +1,4 @@
-﻿import Navbar from "../components/Navbar";
+﻿﻿import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Link from "next/link";
 
@@ -25,7 +25,7 @@ export default function ImpactPage() {
                 <div className="h-3 bg-pink-soft rounded-full overflow-hidden w-full md:w-96">
                   <div className="bg-coral-warm h-full rounded-full" style={{ width: "0.8%" }} />
                 </div>
-                <p className="mt-2 font-label-md text-on-surface-variant">80 of 10,000 girls reached "” maiden outreach complete</p>
+                <p className="mt-2 font-label-md text-on-surface-variant">80 of 10,000 girls reached — maiden outreach complete</p>
               </div>
             </div>
           </div>
@@ -54,7 +54,7 @@ export default function ImpactPage() {
         {/* Maiden Outreach Detail */}
         <section className="py-20 bg-surface-container-low">
           <div className="max-w-container-max mx-auto px-4 md:px-6">
-            <h2 className="font-headline-md text-headline-md text-ink-navy mb-12 text-center">Maiden Outreach "” JOAK Secondary School</h2>
+            <h2 className="font-headline-md text-headline-md text-ink-navy mb-12 text-center">Maiden Outreach — JOAK Secondary School</h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="space-y-8">
                 <div className="space-y-4">
@@ -69,7 +69,7 @@ export default function ImpactPage() {
                     <span className="material-symbols-outlined text-wellbeing-teal text-3xl">groups</span>
                     <div>
                       <p className="font-label-md text-on-surface-variant uppercase">Students Reached</p>
-                      <p className="font-headline-sm text-ink-navy">80 girls "” JSS1 to SSS3</p>
+                      <p className="font-headline-sm text-ink-navy">80 girls — JSS1 to SSS3</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4 p-6 bg-base-white rounded-2xl border border-surface-container-high">
@@ -82,12 +82,12 @@ export default function ImpactPage() {
                 </div>
                 <div className="p-6 border-l-4 border-coral-warm bg-pink-soft/20 rounded-r-2xl">
                   <p className="font-body-md italic text-ink-navy">&ldquo;The education part was eye-opening. Most girls here only learn from rumors. Now they know the truth about their bodies.&rdquo;</p>
-                  <p className="mt-2 font-label-md text-on-surface-variant">"” School Principal, JOAK Secondary School</p>
+                  <p className="mt-2 font-label-md text-on-surface-variant">— School Principal, JOAK Secondary School</p>
                 </div>
               </div>
               <div className="rounded-3xl overflow-hidden shadow-xl aspect-video lg:aspect-square">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgBnz73GS38NDoG85M1M_tqaI8Jmd5V9XMW2-Ro1f2NTsHHzOF7dPNBu_zXcojsC1DDTioBkugPiGiA44S8gX8-3Xim4V2OsEsyaUrvYtLMxrV_RVgb4XkjxvcZ_ZewLJ3Uf5hBNhDbGy4xlj789F385ow-56LQ9YEj_Bl7f2ra82UK_RCHlcbj_EMT2kwR3EOfXOQ8kF-MWF3V-S_qEgT2Bed9PAfs0mU3D3lTRcLcQ_vKdP9_leRFQ" alt="Outreach at JOAK" className="w-full h-full object-cover" />
+                <img src="/images/outreach/MMC08241-Enhanced-NR.jpg" alt="Outreach at JOAK Secondary School" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -97,7 +97,7 @@ export default function ImpactPage() {
         <section className="py-20 bg-dignity-purple text-base-white text-center">
           <div className="max-w-container-max mx-auto px-4 md:px-6 space-y-6">
             <span className="inline-block px-4 py-1.5 bg-white/10 text-white rounded-full font-label-md text-label-md">UPCOMING</span>
-            <h2 className="font-headline-md text-headline-md">Next Outreach "” September 2026</h2>
+            <h2 className="font-headline-md text-headline-md">Next Outreach — September 2026</h2>
             <p className="font-body-lg text-body-lg opacity-90 max-w-2xl mx-auto">
               Our next outreach is planned for September 2026, timed around the reopening of schools after the summer break. We are looking for schools to host us and donors to make it possible.
             </p>

@@ -1,4 +1,4 @@
-﻿import Navbar from "../components/Navbar";
+﻿﻿import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata = { title: "Request an Outreach | iPadAGirl" };
@@ -13,7 +13,7 @@ export default function RequestOutreachPage() {
             <span className="inline-block px-4 py-1.5 bg-coral-warm/10 text-coral-warm rounded-full font-label-md text-label-md mb-6">SCHOOL APPLICATIONS</span>
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-ink-navy mb-6">Request an Outreach</h1>
             <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-              Schools, community leaders and organisations can apply for an iPadAGirl outreach. Submitting this form does not automatically guarantee a visit "” our team will review each application and be in touch.
+              Schools, community leaders and organisations can apply for an iPadAGirl outreach. Submitting this form does not automatically guarantee a visit — our team will review each application and be in touch.
             </p>
           </div>
         </section>
@@ -99,7 +99,7 @@ export default function RequestOutreachPage() {
                   </div>
                   <div>
                     <label className="block font-label-md text-label-md text-on-surface-variant mb-2">Age Range / Classes</label>
-                    <input type="text" placeholder="e.g. JSS1"“SSS3" className="w-full px-4 py-3 rounded-lg border border-outline-variant focus:outline-none focus:border-coral-warm transition-colors" />
+                    <input type="text" placeholder="e.g. JSS1-SSS3" className="w-full px-4 py-3 rounded-lg border border-outline-variant focus:outline-none focus:border-coral-warm transition-colors" />
                   </div>
                 </div>
                 <div>

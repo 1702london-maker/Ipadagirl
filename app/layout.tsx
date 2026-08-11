@@ -5,6 +5,10 @@ export const metadata: Metadata = {
   title: "iPadAGirl | Empowering Girls with Dignity",
   description:
     "iPadAGirl is helping schoolgirls across Nigeria access menstrual products, practical hygiene education and the confidence to navigate puberty without fear, shame or interruption to their education.",
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({

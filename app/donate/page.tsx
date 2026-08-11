@@ -1,4 +1,4 @@
-﻿"use client";
+﻿﻿"use client";
 import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -14,10 +14,10 @@ export default function DonatePage() {
       borderClass: "border-outline-variant/30",
       title: "Sponsor a Girl",
       desc: "Covers one complete kit and health session for a girl in need.",
-      price: "â‚¦7,500",
+      price: "₦7,500",
       unit: "/kit",
       btnClass: "bg-primary text-white hover:bg-primary/90",
-      btnLabel: "Donate â‚¦7,500",
+      btnLabel: "Donate ₦7,500",
       popular: false,
     },
     {
@@ -26,7 +26,7 @@ export default function DonatePage() {
       borderClass: "border-2 border-wellbeing-teal",
       title: "Sponsor a Group",
       desc: "Enable a small peer-group to stay in school for a full academic term.",
-      price: "â‚¦75,000",
+      price: "₦75,000",
       unit: "/10 girls",
       btnClass: "bg-wellbeing-teal text-white hover:bg-wellbeing-teal/90",
       btnLabel: "Sponsor Group",
@@ -38,7 +38,7 @@ export default function DonatePage() {
       borderClass: "border-outline-variant/30",
       title: "School Outreach",
       desc: "Fund a full school visit including kits, transport, facilitators and education materials.",
-      price: "â‚¦500,000",
+      price: "₦500,000",
       unit: "/outreach",
       btnClass: "bg-dignity-purple text-white hover:bg-dignity-purple/90",
       btnLabel: "Sponsor Outreach",
@@ -66,9 +66,9 @@ export default function DonatePage() {
               <h3 className="font-headline-sm text-headline-sm text-ink-navy mb-6">Impact Preview</h3>
               <div className="space-y-6">
                 {[
-                  { label: "â‚¦7,500 covers 1 Girl", sub: "Provides 1 girl with a hygiene kit and a health education session.", color: "text-primary", bg: "bg-pink-soft" },
-                  { label: "â‚¦37,500 covers 5 Girls", sub: "Enables a small group to stay in school for a full term.", color: "text-secondary", bg: "bg-surface-container" },
-                  { label: "â‚¦75,000 covers 10 Girls", sub: "Funds a complete group outreach session with all materials.", color: "text-wellbeing-teal", bg: "bg-wellbeing-teal/10" },
+                  { label: "₦7,500 covers 1 Girl", sub: "Provides 1 girl with a hygiene kit and a health education session.", color: "text-primary", bg: "bg-pink-soft" },
+                  { label: "₦37,500 covers 5 Girls", sub: "Enables a small group to stay in school for a full term.", color: "text-secondary", bg: "bg-surface-container" },
+                  { label: "₦75,000 covers 10 Girls", sub: "Funds a complete group outreach session with all materials.", color: "text-wellbeing-teal", bg: "bg-wellbeing-teal/10" },
                 ].map((item) => (
                   <div key={item.label} className="flex items-start gap-4">
                     <div className={`w-10 h-10 rounded-full ${item.bg} flex items-center justify-center flex-shrink-0`}>
@@ -83,7 +83,7 @@ export default function DonatePage() {
                 <div className="w-full h-2 bg-pink-soft rounded-full overflow-hidden mt-8">
                   <div className="w-1 h-full bg-coral-warm rounded-full" />
                 </div>
-                <p className="font-label-md text-center text-on-surface-variant uppercase tracking-wider">First outreach funded "” help us reach more</p>
+                <p className="font-label-md text-center text-on-surface-variant uppercase tracking-wider">First outreach funded — help us reach more</p>
               </div>
             </div>
           </div>
