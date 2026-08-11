@@ -47,8 +47,8 @@ export default function PartnerPage() {
           <div className="max-w-container-max mx-auto px-4 md:px-6 text-center">
             <p className="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest mb-10">Our Current Partners</p>
             <div className="flex flex-wrap justify-center items-center gap-12">
-              <img src="/images/partners/aquila Media Logo.png" alt="Aquila Media" className="h-16 object-contain grayscale hover:grayscale-0 transition-all" />
-              <img src="/images/partners/aquilaprinthub logo.png" alt="Aquila PrintHub" className="h-16 object-contain grayscale hover:grayscale-0 transition-all" />
+              <img src="/images/partners/aquila Media Logo.png" alt="Aquila Media" className="h-24 object-contain grayscale hover:grayscale-0 transition-all" />
+              <img src="/images/partners/aquilaprinthub logo.png" alt="Aquila PrintHub" className="h-10 object-contain grayscale hover:grayscale-0 transition-all" />
             </div>
           </div>
         </section>
