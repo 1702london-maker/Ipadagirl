@@ -4,6 +4,27 @@ import Footer from "../components/Footer";
 
 export const metadata = { title: "About Us | iPadAGirl" };
 
+const pillars = [
+  {
+    icon: "visibility",
+    color: "coral-warm",
+    title: "Our Vision",
+    body: "To create a future where every girl has the knowledge, confidence and resources to manage her menstrual health with dignity.",
+  },
+  {
+    icon: "flag",
+    color: "dignity-purple",
+    title: "Our Mission",
+    body: "To educate, empower and support teenage schoolgirls — particularly those in underserved communities — with menstrual sanitary products, personal hygiene resources and accurate hygiene education that enables them to experience and navigate adolescence with dignity and confidence.",
+  },
+  {
+    icon: "track_changes",
+    color: "wellbeing-teal",
+    title: "Our Goal",
+    body: "To reach and support at least 10,000 schoolgirls across schools and rural communities in Africa, starting with schools in Nigeria.",
+  },
+];
+
 export default function AboutPage() {
   return (
     <>
@@ -33,26 +54,7 @@ export default function AboutPage() {
         <section className="py-20">
           <div className="max-w-container-max mx-auto px-4 md:px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  icon: “visibility”,
-                  color: “coral-warm”,
-                  title: “Our Vision”,
-                  body: “To create a future where every girl has the knowledge, confidence and resources to manage her menstrual health with dignity.”,
-                },
-                {
-                  icon: “flag”,
-                  color: “dignity-purple”,
-                  title: “Our Mission”,
-                  body: “To educate, empower and support teenage schoolgirls — particularly those in underserved communities — with menstrual sanitary products, personal hygiene resources and accurate hygiene education that enables them to experience and navigate adolescence with dignity and confidence.”,
-                },
-                {
-                  icon: “track_changes”,
-                  color: “wellbeing-teal”,
-                  title: “Our Goal”,
-                  body: “To reach and support at least 10,000 schoolgirls across schools and rural communities in Africa, starting with schools in Nigeria.”,
-                },
-              ].map((item) => (
+              {pillars.map((item) => (
                 <div key={item.title} className="bg-base-white p-8 rounded-2xl border border-surface-container-high shadow-sm">
                   <div className={`w-14 h-14 bg-${item.color}/10 text-${item.color} rounded-2xl flex items-center justify-center mb-6`}>
                     <span className="material-symbols-outlined text-3xl">{item.icon}</span>
