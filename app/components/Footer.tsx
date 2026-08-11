@@ -52,27 +52,31 @@ export default function Footer() {
               products and comprehensive menstrual health education. Together, we
               build dignity.
             </p>
-            <div className="flex flex-col gap-3">
-              {socials.map((s) => (
-                <a
-                  key={s.label}
-                  href={s.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={s.label}
-                  className="flex items-center gap-3 group w-fit"
-                >
-                  <span
-                    className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0 transition-opacity group-hover:opacity-80"
+            {/* Social pill banner — exact Zzini design */}
+            <div className="flex rounded-full overflow-hidden w-full max-w-sm" style={{ background: "#fff" }}>
+              {/* Left: white pill with icons */}
+              <div className="flex items-center gap-2 px-4 py-3 bg-white flex-shrink-0">
+                {socials.map((s) => (
+                  <a
+                    key={s.label}
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={s.label}
+                    className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 hover:opacity-80 transition-opacity"
                     style={{ background: s.bg }}
                   >
                     {s.svg}
-                  </span>
-                  <span className="text-surface-variant text-sm group-hover:text-coral-warm transition-colors">
-                    {s.handle}
-                  </span>
-                </a>
-              ))}
+                  </a>
+                ))}
+              </div>
+              {/* Right: purple pill with handle */}
+              <div
+                className="flex items-center justify-center flex-1 px-4 py-3"
+                style={{ background: "linear-gradient(90deg, #9B2D8E, #C9429C)" }}
+              >
+                <span className="text-white font-semibold text-sm whitespace-nowrap">@padagirlwithzzini</span>
+              </div>
             </div>
             <div className="space-y-1 text-surface-variant text-sm">
               <p>📞 <a href="tel:+2349169457000" className="hover:text-coral-warm">+234 916 945 7000</a></p>
