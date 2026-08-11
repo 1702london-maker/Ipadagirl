@@ -9,7 +9,7 @@ const team = [
     name: "Zzini Oluchi Ekeh",
     role: "Founder, Project iPadAGirl",
     tags: ["TV Host", "Producer", "PR Strategist", "Social Impact Advocate"],
-    image: "/images/outreach/MMC08145.jpg",
+    image: "/images/team/zzini-oluchi-ekeh.jpg",
     bio: [
       "Zzini Oluchi Ekeh is a Nigerian media professional, presenter, producer, PR strategist, and social impact advocate with over a decade of experience across television, radio, event hosting, media production, and brand communications.",
       "Passionate about using her platform and influence to create meaningful change, Zzini founded Project iPadAGirl — an initiative dedicated to supporting girls in underserved communities by providing access to menstrual hygiene products, education, and practical knowledge about personal and intimate hygiene.",
@@ -22,7 +22,7 @@ const team = [
     name: "Ezinne Joy Nwaokike",
     role: "Admin Manager",
     tags: ["Office Administration", "Executive Support", "Operations"],
-    image: "/images/outreach/MMC08222.jpg",
+    image: "/images/team/ezinne-nwaokike.jpg",
     bio: [
       "Ezinne keeps things running behind the scenes at iPadAGirl. With a background in office administration and executive support, she brings structure and organisation to the team's outreach efforts, ensuring every kit reaches the girls who need it.",
       "She is passionate about dignity, education, and empowerment for young girls, and is proud to support a cause that changes lives one classroom at a time.",
@@ -33,7 +33,7 @@ const team = [
     name: "Shola Daniel",
     role: "Creative Director",
     tags: ["Brand Identity", "Design", "Print", "Digital Media"],
-    image: "/images/outreach/MMC08224.jpg",
+    image: "/images/team/shola-daniel.jpg",
     bio: [
       "Shola Daniel is the Creative Director at AquilaMediaCo, a vibrant creative with over a decade of experience in the design and print industry. His depth of creativity and strategic thinking has positioned him to work with companies and brands at home and abroad.",
       "Shola is a Brand Identity specialist and product promotions expert with a swift, innovative approach to visual storytelling. He brings creative spontaneity, proactive ideas, and new growth strategies to everything iPadAGirl puts out in the world.",
