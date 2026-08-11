@@ -59,7 +59,7 @@ export default function DonatePage() {
                 Your Support Keeps a <span className="text-coral-warm">Girl in School</span>.
               </h1>
               <p className="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
-                When girls have access to menstrual health products and education, their attendance and confidence skyrocket. Join our mission to end period poverty in Nigeria.
+                When girls have access to menstrual health products and education, their attendance and confidence skyrocket. Join our mission to End Period Poverty in Africa.
               </p>
             </div>
             <div className="bg-base-white p-8 rounded-xl shadow-sm border border-outline-variant/30">

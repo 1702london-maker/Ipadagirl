@@ -30,16 +30,9 @@ export default function Navbar() {
     <header className="bg-base-white border-b border-surface-container shadow-sm sticky top-0 z-50">
       <nav className="flex justify-between items-center max-w-container-max mx-auto px-4 md:px-6 py-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
-          <span
-            className="material-symbols-outlined text-coral-warm text-3xl"
-            style={{ fontVariationSettings: "'FILL' 1" }}
-          >
-            volunteer_activism
-          </span>
-          <span className="font-display-lg text-headline-sm font-bold text-ink-navy">
-            iPadAGirl
-          </span>
+        <Link href="/" className="flex items-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo.png" alt="Project iPadAGirl" className="h-12 w-auto object-contain" />
         </Link>
 
         {/* Desktop nav */}

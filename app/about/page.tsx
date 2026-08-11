@@ -20,8 +20,8 @@ export default function AboutPage() {
                 Who We Are
               </h1>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                iPadAGirl is a long-term menstrual health and personal hygiene
-                initiative committed to supporting schoolgirls across Nigeria. We
+                Project iPadAGirl is a long-term menstrual health and personal hygiene
+                initiative committed to supporting schoolgirls across Africa — starting with Nigeria. We
                 combine hygiene-kit distribution with practical education about
                 menstruation, puberty, self-care and personal hygiene.
               </p>
@@ -35,22 +35,22 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  icon: "flag",
-                  color: "coral-warm",
-                  title: "Our Mission",
-                  body: "To provide schoolgirls â€” particularly those in underserved communities â€” with menstrual products, personal hygiene resources and accurate education that enables them to experience adolescence with dignity and confidence.",
+                  icon: “visibility”,
+                  color: “coral-warm”,
+                  title: “Our Vision”,
+                  body: “To create a future where every girl has the knowledge, confidence and resources to manage her menstrual health with dignity.”,
                 },
                 {
-                  icon: "visibility",
-                  color: "dignity-purple",
-                  title: "Our Vision",
-                  body: "A Nigeria where no girl misses school, feels ashamed or struggles alone because of menstruation.",
+                  icon: “flag”,
+                  color: “dignity-purple”,
+                  title: “Our Mission”,
+                  body: “To educate, empower and support teenage schoolgirls — particularly those in underserved communities — with menstrual sanitary products, personal hygiene resources and accurate hygiene education that enables them to experience and navigate adolescence with dignity and confidence.”,
                 },
                 {
-                  icon: "track_changes",
-                  color: "wellbeing-teal",
-                  title: "Our Goal",
-                  body: "To reach and support at least 10,000 schoolgirls across schools and rural communities in Nigeria.",
+                  icon: “track_changes”,
+                  color: “wellbeing-teal”,
+                  title: “Our Goal”,
+                  body: “To reach and support at least 10,000 schoolgirls across schools and rural communities in Africa, starting with schools in Nigeria.”,
                 },
               ].map((item) => (
                 <div key={item.title} className="bg-base-white p-8 rounded-2xl border border-surface-container-high shadow-sm">
@@ -103,7 +103,7 @@ export default function AboutPage() {
             <div className="bg-pink-soft rounded-3xl p-10 space-y-6">
               <div className="text-6xl font-bold text-coral-warm font-display-lg">i<span className="text-dignity-purple">Pad</span>A<span className="text-wellbeing-teal">Girl</span></div>
               <p className="font-body-md text-on-surface-variant">
-                Each letter carries meaning. The lowercase &ldquo;i&rdquo; echoes the digital era while keeping the focus personal. &ldquo;Pad&rdquo; names the action. &ldquo;A Girl&rdquo; names the beneficiary â€” every single one of them.
+                Each letter carries meaning. The lowercase &ldquo;i&rdquo; echoes a personal conviction while keeping the focus on the action to Pad. &ldquo;Pad&rdquo; names the action. &ldquo;A Girl&rdquo; names the beneficiary — every single one of them.
               </p>
             </div>
           </div>

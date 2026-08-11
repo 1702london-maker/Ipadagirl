@@ -3,11 +3,13 @@
 @theme {
   /* Brand Colors */
   --color-ink-navy: #1D2433;
-  --color-coral-warm: #E87A6B;
-  --color-dignity-purple: #5D51BB;
+  --color-coral-warm: #DD68BE;
+  --color-dignity-purple: #DD68BE;
   --color-wellbeing-teal: #2A9D8F;
-  --color-pink-soft: #FCECEC;
+  --color-pink-soft: #F9A0E1;
   --color-base-white: #FDFBF9;
+  --color-brand-pink: #DD68BE;
+  --color-brand-light: #F9A0E1;
 
   /* Material Design Surface Colors */
   --color-surface: #f9f9ff;
@@ -25,16 +27,16 @@
   --color-inverse-on-surface: #edf0ff;
 
   /* Primary */
-  --color-primary: #9d4135;
+  --color-primary: #DD68BE;
   --color-on-primary: #ffffff;
-  --color-primary-container: #e87a6b;
-  --color-on-primary-container: #62150e;
-  --color-primary-fixed: #ffdad5;
-  --color-primary-fixed-dim: #ffb4a9;
-  --color-on-primary-fixed: #410000;
-  --color-on-primary-fixed-variant: #7e2a21;
-  --color-inverse-primary: #ffb4a9;
-  --color-surface-tint: #9d4135;
+  --color-primary-container: #F9A0E1;
+  --color-on-primary-container: #5c1a52;
+  --color-primary-fixed: #fde8f8;
+  --color-primary-fixed-dim: #F9A0E1;
+  --color-on-primary-fixed: #3d0037;
+  --color-on-primary-fixed-variant: #b04a9a;
+  --color-inverse-primary: #F9A0E1;
+  --color-surface-tint: #DD68BE;
 
   /* Secondary */
   --color-secondary: #4d41df;
@@ -124,10 +126,10 @@
 }
 
 /* Font family utilities */
-@utility font-display-lg { font-family: 'Public Sans', sans-serif; }
-@utility font-display-lg-mobile { font-family: 'Public Sans', sans-serif; }
-@utility font-headline-md { font-family: 'Public Sans', sans-serif; }
-@utility font-headline-sm { font-family: 'Public Sans', sans-serif; }
+@utility font-display-lg { font-family: 'Poppins', sans-serif; }
+@utility font-display-lg-mobile { font-family: 'Poppins', sans-serif; }
+@utility font-headline-md { font-family: 'Poppins', sans-serif; }
+@utility font-headline-sm { font-family: 'Poppins', sans-serif; }
 @utility font-body-lg { font-family: 'Inter', sans-serif; }
 @utility font-body-md { font-family: 'Inter', sans-serif; }
 @utility font-label-md { font-family: 'Inter', sans-serif; }

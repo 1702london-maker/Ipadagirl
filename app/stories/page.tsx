@@ -1,6 +1,5 @@
-﻿import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Link from "next/link";
 
 export const metadata = { title: "Stories & News | iPadAGirl" };
 
@@ -12,25 +11,28 @@ const articles = [
     excerpt: "TV host and producer Zzini Oluchi Ekeh launched the iPadAGirl initiative with a maiden outreach at JOAK Secondary School in Ibeju-Lekki, Lagos, reaching 80 girls with hygiene kits and practical menstrual health education.",
     source: "Vanguard News",
     date: "July 2026",
-    img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCgBnz73GS38NDoG85M1M_tqaI8Jmd5V9XMW2-Ro1f2NTsHHzOF7dPNBu_zXcojsC1DDTioBkugPiGiA44S8gX8-3Xim4V2OsEsyaUrvYtLMxrV_RVgb4XkjxvcZ_ZewLJ3Uf5hBNhDbGy4xlj789F385ow-56LQ9YEj_Bl7f2ra82UK_RCHlcbj_EMT2kwR3EOfXOQ8kF-MWF3V-S_qEgT2Bed9PAfs0mU3D3lTRcLcQ_vKdP9_leRFQ",
+    img: "/images/outreach/MMC08241-Enhanced-NR.jpg",
+    href: "https://www.vanguardngr.com/2026/07/ipad-a-girl-project-kicks-off-with-maiden-outreach-targets-10000-schoolgirls/",
   },
   {
-    tag: "OUTREACH REPORT",
-    tagColor: "text-wellbeing-teal bg-wellbeing-teal/10",
-    title: "Maiden Outreach Report: JOAK Secondary School, Ibeju-Lekki",
-    excerpt: "A full account of our first school visit â€” what we distributed, what was taught, what the students said, and what we learned that will shape every outreach that follows.",
-    source: "iPadAGirl",
+    tag: "PRESS",
+    tagColor: "text-coral-warm bg-coral-warm/10",
+    title: "I Pad A Girl Project Launches With Maiden Outreach, Targets 10,000 Schoolgirls",
+    excerpt: "The initiative, founded by media personality Zzini Oluchi Ekeh, aims to eradicate period poverty and build lasting confidence in girls across Nigeria and beyond.",
+    source: "New Telegraph",
     date: "July 2026",
-    img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBUHIqPCeeNobsZ3pdYntkzK0eXpWbG-tBsg6HSkG9U6bU_Wu8j1bHoz6miMgEY_9DgSFCwgUvuygM5oP09MV1vDY_RofGUYsXNwoCEcA-tdavBicy-e5BvXoGeGnAINLuEgdMaqZaWObkh8wr_ENCS7fBHK51pX4FNk_Z5OdHSIGIvARoB8VV_Vm4e-guVxZ2VlANfVbGZhBJcNVAfZjN4XH1YknhK3vk5NTQnaxRvxdQZl6vP77s0Gg",
+    img: "/images/outreach/MMC08289-Enhanced-NR.jpg",
+    href: "https://newtelegraphng.com/i-pad-a-girl-project-launches-eith-maiden-outreach-targets-10000-schoolgirls/",
   },
   {
-    tag: "FOUNDER UPDATE",
-    tagColor: "text-dignity-purple bg-dignity-purple/10",
-    title: "A Message from Zzini: What We Learned from Our First 80 Girls",
-    excerpt: "After our maiden outreach, founder Zzini Oluchi Ekeh shares her reflections on what surprised her, what moved her, and what the girls themselves taught the team.",
-    source: "iPadAGirl",
-    date: "August 2026",
-    img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCDnp36dqltJ-QBp9iUOcT9mCBEE6R5wSBa_mZsr_57qW29qOAjQTCjQBovLLJDTvk-oHRR8UKl8vYLMQZOtRPtCchf58nmYG3jd92YA6nSbyWL1DgRBqQX8NZ8scbG7R91PlLzvGgaMzwI2C0A-t2IWL_tRBelG1NlRzED-wyopmvu_MNPpjqLn0c2Y9Sr6vpWZhtzsmFzeVlmfTPtt_BAkGa9p0-ebFO9XbZWpIWwbUpQe6D5DP3jCg",
+    tag: "PRESS",
+    tagColor: "text-coral-warm bg-coral-warm/10",
+    title: "I Pad A Girl Project Targets 10,000 Schoolgirls in Maiden Outreach",
+    excerpt: "The project's first outreach at JOAK Secondary School delivered hygiene kits and menstrual health education to over 80 girls, with plans to scale across Africa.",
+    source: "Independent Nigeria",
+    date: "July 2026",
+    img: "/images/outreach/MMC08284-Enhanced-NR.jpg",
+    href: "https://independent.ng/i-pad-a-girl-project-targets-10000-schoolgirls-in-maiden-outreach/",
   },
 ];
 
@@ -53,7 +55,13 @@ export default function StoriesPage() {
           <div className="max-w-container-max mx-auto px-4 md:px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {articles.map((article) => (
-                <article key={article.title} className="bg-base-white rounded-3xl border border-surface-container-high shadow-sm overflow-hidden hover:shadow-md hover:-translate-y-1 transition-all">
+                <a
+                  key={article.title}
+                  href={article.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-base-white rounded-3xl border border-surface-container-high shadow-sm overflow-hidden hover:shadow-md hover:-translate-y-1 transition-all block"
+                >
                   <div className="aspect-video overflow-hidden">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={article.img} alt={article.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
@@ -67,12 +75,12 @@ export default function StoriesPage() {
                     <p className="text-on-surface-variant font-body-md text-sm leading-relaxed">{article.excerpt}</p>
                     <div className="flex items-center justify-between pt-2">
                       <span className="font-label-md text-on-surface-variant text-xs">SOURCE: {article.source}</span>
-                      <button className="text-dignity-purple font-label-md text-xs inline-flex items-center gap-1">
-                        READ <span className="material-symbols-outlined text-[14px]">chevron_right</span>
-                      </button>
+                      <span className="text-coral-warm font-label-md text-xs inline-flex items-center gap-1">
+                        READ <span className="material-symbols-outlined text-[14px]">open_in_new</span>
+                      </span>
                     </div>
                   </div>
-                </article>
+                </a>
               ))}
             </div>
           </div>

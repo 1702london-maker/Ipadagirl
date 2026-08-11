@@ -1,9 +1,16 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import CounterStrip from "./components/CounterStrip";
 
 export default function Home() {
+  const outreachPhotos = [
+    "/images/outreach/MMC08241-Enhanced-NR.jpg",
+    "/images/outreach/MMC08284-Enhanced-NR.jpg",
+    "/images/outreach/MMC08289-Enhanced-NR.jpg",
+    "/images/outreach/MMC08077.jpg",
+  ];
+
   return (
     <>
       <Navbar />
@@ -13,15 +20,15 @@ export default function Home() {
           <div className="absolute top-0 right-0 w-1/3 h-full bg-pink-soft/50 rounded-l-[100px] -z-10 translate-x-20" />
           <div className="max-w-container-max mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
-              <span className="inline-block px-4 py-1.5 bg-dignity-purple/10 text-dignity-purple rounded-full font-label-md text-label-md">
-                NIGERIA-WIDE INITIATIVE
+              <span className="inline-block px-4 py-1.5 bg-coral-warm/10 text-coral-warm rounded-full font-label-md text-label-md">
+                AFRICA-WIDE INITIATIVE
               </span>
               <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg leading-tight text-ink-navy">
                 Empowering Every Girl to Grow with{" "}
                 <span className="text-coral-warm italic">Dignity</span>
               </h1>
               <p className="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
-                iPadAGirl is helping schoolgirls across Nigeria access menstrual
+                Project iPadAGirl is helping schoolgirls across Africa access menstrual
                 products, practical hygiene education and the confidence to navigate
                 puberty without fear, shame or interruption to their education.
               </p>
@@ -41,7 +48,7 @@ export default function Home() {
               </div>
               <Link
                 href="/request-outreach"
-                className="inline-flex items-center gap-2 text-dignity-purple font-semibold hover:underline"
+                className="inline-flex items-center gap-2 text-coral-warm font-semibold hover:underline"
               >
                 Request a School Outreach{" "}
                 <span className="material-symbols-outlined">arrow_forward</span>
@@ -51,12 +58,12 @@ export default function Home() {
               <div className="aspect-square rounded-[40px] overflow-hidden shadow-2xl">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=800&q=80"
-                  alt="A confident Nigerian schoolgirl in uniform"
+                  src="/images/outreach/MMC08199.jpg"
+                  alt="Girls at an iPadAGirl outreach"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-wellbeing-teal/20 rounded-full blur-3xl -z-10" />
+              <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-pink-soft/40 rounded-full blur-3xl -z-10" />
             </div>
           </div>
         </section>
@@ -69,8 +76,8 @@ export default function Home() {
             <div className="relative rounded-3xl overflow-hidden shadow-xl aspect-video lg:aspect-square">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKpjsFOhHb8i86_RYs6fZWvsgKLW1ae4gZCzydwQ4xGXnpH5WTRKCJgAfcYuTIvHQCS9ITKURYOGUzGPxaS4A4IzCXkwFVFL-RK4s1pwCrKl5--7SkQp2sQU4tUFuOPGOjtfoHLjAr6NCiIQ0IgEh-RsSLkS7aYuOLCABnrudnjsfOS1neXjJKp61UWAKDX0Bhm9GIPEsOlKxXFF_mp5t4tdrIMksRP_NLgYYquwFqceqFW_lW3fLR5w"
-                alt="Empty classroom"
+                src="/images/outreach/MMC08163.jpg"
+                alt="Girls at outreach"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink-navy/60 to-transparent" />
@@ -88,7 +95,7 @@ export default function Home() {
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 As girls transition into puberty, their bodies undergo natural
                 changes that should be celebrated, not feared. However, for many
-                schoolgirls in Nigeria, these changes bring immense anxiety.
+                schoolgirls in Africa, these changes bring immense anxiety.
               </p>
               <p className="font-body-md text-body-md text-on-surface-variant">
                 High costs of sanitary products force many to miss classes for days
@@ -122,8 +129,8 @@ export default function Home() {
               {[
                 { icon: "redeem", color: "text-coral-warm", bg: "bg-coral-warm/10 group-hover:bg-coral-warm group-hover:text-white", title: "Complete Hygiene Kits", desc: "Essential supplies to keep girls clean, confident, and in the classroom for months at a time." },
                 { icon: "menu_book", color: "text-wellbeing-teal", bg: "bg-wellbeing-teal/10 group-hover:bg-wellbeing-teal group-hover:text-white", title: "Menstrual Health Education", desc: "Science-based education to demystify puberty and teach healthy management practices." },
-                { icon: "forum", color: "text-dignity-purple", bg: "bg-dignity-purple/10 group-hover:bg-dignity-purple group-hover:text-white", title: "Safe Conversations", desc: "Creating judgment-free zones where girls can ask questions and share their lived experiences." },
-                { icon: "self_care", color: "text-secondary", bg: "bg-secondary/10 group-hover:bg-secondary group-hover:text-white", title: "Confidence & Self-Care", desc: "Empowering girls with the tools and mindset to value their bodies and prioritize their well-being." },
+                { icon: "forum", color: "text-coral-warm", bg: "bg-coral-warm/10 group-hover:bg-coral-warm group-hover:text-white", title: "Safe Conversations", desc: "Creating judgment-free zones where girls can ask questions and share their lived experiences." },
+                { icon: "self_care", color: "text-wellbeing-teal", bg: "bg-wellbeing-teal/10 group-hover:bg-wellbeing-teal group-hover:text-white", title: "Confidence & Self-Care", desc: "Empowering girls with the tools and mindset to value their bodies and prioritize their well-being." },
               ].map((card) => (
                 <div key={card.title} className="bg-base-white p-8 rounded-2xl border border-surface-container-high shadow-sm hover:shadow-md transition-all group">
                   <div className={`w-12 h-12 ${card.bg} ${card.color} rounded-xl flex items-center justify-center mb-6 transition-colors`}>
@@ -131,7 +138,7 @@ export default function Home() {
                   </div>
                   <h3 className="font-headline-sm text-headline-sm text-ink-navy mb-3">{card.title}</h3>
                   <p className="text-on-surface-variant font-body-md mb-4">{card.desc}</p>
-                  <Link href="/what-we-do" className="text-label-md font-label-md text-dignity-purple inline-flex items-center gap-1">
+                  <Link href="/what-we-do" className="text-label-md font-label-md text-coral-warm inline-flex items-center gap-1">
                     LEARN MORE <span className="material-symbols-outlined text-[18px]">chevron_right</span>
                   </Link>
                 </div>
@@ -169,16 +176,16 @@ export default function Home() {
                 </div>
               </div>
               <div className="relative">
-                <div className="p-8 bg-white/10 backdrop-blur-md rounded-3xl border border-white/20">
+                <div className="rounded-3xl overflow-hidden shadow-2xl">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5JNERJEfJqFEbuYsIsRfw-PjiPADibudiz79axqfRlgv6uqHb6rEFVU3ycj1vgwCxVUkIL_tMTjlf278fgl7pvWttc7ZWz1hAbY9yoY1yyXCGGG7lJC27hMXDoj6osNkbCPZYBdm3vASHG5PsA7zh7rcvmc3n4KS2L5ekvBZJETWz0tjW6_iIFL4wjrSY8mt0KDQZaD49PFh9SXJfXO7RGfnVhEfMLg4Ws5PtPrc1I__zqrFA6A9-ig"
-                    alt="Hygiene kit"
-                    className="rounded-2xl w-full shadow-lg"
+                    src="/images/outreach/MMC08022.jpg"
+                    alt="Hygiene kit being distributed"
+                    className="w-full object-cover"
                   />
                 </div>
-                <div className="absolute -bottom-6 -right-6 p-6 bg-wellbeing-teal rounded-2xl shadow-xl hidden md:block">
-                  <div className="text-headline-sm font-bold">â‚¦7,500</div>
+                <div className="absolute -bottom-6 -right-6 p-6 bg-coral-warm rounded-2xl shadow-xl hidden md:block">
+                  <div className="text-headline-sm font-bold">₦10,000</div>
                   <div className="text-label-md opacity-80">Cost per Kit</div>
                 </div>
               </div>
@@ -194,7 +201,7 @@ export default function Home() {
                 <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl -rotate-3">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDnp36dqltJ-QBp9iUOcT9mCBEE6R5wSBa_mZsr_57qW29qOAjQTCjQBovLLJDTvk-oHRR8UKl8vYLMQZOtRPtCchf58nmYG3jd92YA6nSbyWL1DgRBqQX8NZ8scbG7R91PlLzvGgaMzwI2C0A-t2IWL_tRBelG1NlRzED-wyopmvu_MNPpjqLn0c2Y9Sr6vpWZhtzsmFzeVlmfTPtt_BAkGa9p0-ebFO9XbZWpIWwbUpQe6D5DP3jCg"
+                    src="/images/outreach/MMC08145.jpg"
                     alt="Zzini Oluchi Ekeh, Founder"
                     className="w-full h-full object-cover"
                   />
@@ -206,10 +213,10 @@ export default function Home() {
                   &ldquo;Inspired by Experience. Built for Every Girl.&rdquo;
                 </h2>
                 <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-                  iPadAGirl wasn&apos;t just born out of a desire to do good â€” it was born out of a lived reality. Growing up, our founder Zzini Oluchi Ekeh witnessed firsthand how something as natural as a period could become a source of profound fear and educational setback.
+                  Project iPadAGirl wasn&apos;t just born out of a desire to do good — it was born out of a lived reality. Growing up, our founder Zzini Oluchi Ekeh witnessed firsthand how something as natural as a period could become a source of profound fear and educational setback.
                 </p>
                 <p className="font-body-md text-body-md text-on-surface-variant">
-                  She remembers the hushed whispers, the improvised solutions, and the girls who simply stopped showing up to school. Today, she is leading a movement to ensure that no girl has to repeat those experiences.
+                  She remembers the hushed whispers, the improvised solutions, and the girls who simply stopped showing up to school. Today, she is leading a movement to ensure that no girl — across Africa — has to repeat those experiences.
                 </p>
                 <Link href="/founder" className="inline-block px-8 py-4 bg-ink-navy text-base-white rounded-xl font-semibold hover:opacity-90 transition-all">
                   Read Zzini&apos;s Story
@@ -227,7 +234,7 @@ export default function Home() {
                 <h2 className="font-headline-md text-headline-md text-ink-navy mb-2">Our Latest Impact</h2>
                 <p className="text-on-surface-variant">See how your contributions are changing lives on the ground.</p>
               </div>
-              <Link href="/outreaches" className="text-primary font-bold inline-flex items-center gap-2 group">
+              <Link href="/outreaches" className="text-coral-warm font-bold inline-flex items-center gap-2 group">
                 VIEW ALL OUTREACH <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
               </Link>
             </div>
@@ -236,7 +243,7 @@ export default function Home() {
                 <div className="space-y-4">
                   <span className="px-3 py-1 bg-wellbeing-teal/10 text-wellbeing-teal rounded-lg font-label-md">MAIDEN OUTREACH</span>
                   <h3 className="font-headline-sm text-headline-sm text-ink-navy">JOAK Secondary School, Ibeju-Lekki, Lagos</h3>
-                  <p className="text-on-surface-variant font-body-md">In our very first school outreach, we visited JOAK Secondary School in Okun-Idado to address the immediate needs of their students. We didn&apos;t just deliver boxes; we delivered hope and dignity.</p>
+                  <p className="text-on-surface-variant font-body-md">In our very first school outreach, we visited JOAK Secondary School in Okun-Idado to address the immediate needs of their students. We didn&apos;t just deliver boxes — we delivered hope and dignity.</p>
                 </div>
                 <div className="grid grid-cols-2 gap-6">
                   <div className="bg-surface-container-low p-6 rounded-2xl">
@@ -250,19 +257,14 @@ export default function Home() {
                 </div>
                 <div className="p-6 border-l-4 border-coral-warm bg-pink-soft/20 rounded-r-2xl">
                   <p className="font-body-md italic text-ink-navy">&ldquo;The education part was eye-opening. Most girls here only learn from rumors. Now they know the truth about their bodies.&rdquo;</p>
-                  <p className="mt-2 font-label-md text-on-surface-variant">â€” School Principal</p>
+                  <p className="mt-2 font-label-md text-on-surface-variant">— School Principal</p>
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4">
-                {[
-                  { src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCgBnz73GS38NDoG85M1M_tqaI8Jmd5V9XMW2-Ro1f2NTsHHzOF7dPNBu_zXcojsC1DDTioBkugPiGiA44S8gX8-3Xim4V2OsEsyaUrvYtLMxrV_RVgb4XkjxvcZ_ZewLJ3Uf5hBNhDbGy4xlj789F385ow-56LQ9YEj_Bl7f2ra82UK_RCHlcbj_EMT2kwR3EOfXOQ8kF-MWF3V-S_qEgT2Bed9PAfs0mU3D3lTRcLcQ_vKdP9_leRFQ", offset: "" },
-                  { src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBUHIqPCeeNobsZ3pdYntkzK0eXpWbG-tBsg6HSkG9U6bU_Wu8j1bHoz6miMgEY_9DgSFCwgUvuygM5oP09MV1vDY_RofGUYsXNwoCEcA-tdavBicy-e5BvXoGeGnAINLuEgdMaqZaWObkh8wr_ENCS7fBHK51pX4FNk_Z5OdHSIGIvARoB8VV_Vm4e-guVxZ2VlANfVbGZhBJcNVAfZjN4XH1YknhK3vk5NTQnaxRvxdQZl6vP77s0Gg", offset: "mt-8" },
-                  { src: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7zwbZQs2HPGqrx264lvfErjGlzXISBA6kLM-S63immQ3Fkwdw3NWeC83icnEUPKgykeG1bYnVjvE0Za6ccPyTsifad1UMIExUmVoSSg52dx1Yd9pSzqROce6cZIuhj_gpcyBPriygsBp_Kj5l0vHTbQBlVfR40WJ9gdBJIdBdkp0EK24x-6dJ8OwqkgSCwGxVwY09o6B2ZPP6AqWVuKsa1JQqOxN-1uevSJk6Byx0P-Hx6iLLwtzogg", offset: "-mt-8" },
-                  { src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCgBnz73GS38NDoG85M1M_tqaI8Jmd5V9XMW2-Ro1f2NTsHHzOF7dPNBu_zXcojsC1DDTioBkugPiGiA44S8gX8-3Xim4V2OsEsyaUrvYtLMxrV_RVgb4XkjxvcZ_ZewLJ3Uf5hBNhDbGy4xlj789F385ow-56LQ9YEj_Bl7f2ra82UK_RCHlcbj_EMT2kwR3EOfXOQ8kF-MWF3V-S_qEgT2Bed9PAfs0mU3D3lTRcLcQ_vKdP9_leRFQ", offset: "" },
-                ].map((img, i) => (
-                  <div key={i} className={`rounded-3xl overflow-hidden h-64 ${img.offset}`}>
+                {outreachPhotos.map((src, i) => (
+                  <div key={i} className={`rounded-3xl overflow-hidden h-64 ${i === 1 ? "mt-8" : i === 2 ? "-mt-8" : ""}`}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={img.src} alt={`Outreach ${i + 1}`} className="w-full h-full object-cover" />
+                    <img src={src} alt={`Outreach ${i + 1}`} className="w-full h-full object-cover" />
                   </div>
                 ))}
               </div>
@@ -277,7 +279,7 @@ export default function Home() {
               Your Support Can Keep a Girl in School and Build Her Future
             </h2>
             <p className="font-body-lg text-body-lg max-w-2xl mx-auto opacity-90">
-              Join us in our mission to reach 10,000 girls across Nigeria. Whether as an individual sponsor or a corporate partner, your contribution directly impacts a girl&apos;s dignity.
+              Join us in our mission to reach 10,000 girls across Africa. Whether as an individual sponsor or a corporate partner, your contribution directly impacts a girl&apos;s dignity.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
               <Link href="/donate" className="px-10 py-5 bg-ink-navy text-base-white rounded-xl font-bold text-body-lg shadow-xl hover:scale-105 transition-transform">
