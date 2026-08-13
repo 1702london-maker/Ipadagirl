@@ -27,7 +27,7 @@ export default function TermsOfUsePage() {
 
               <div>
                 <h2 className="font-headline-sm text-headline-sm text-ink-navy mb-4">2. About Project iPadAGirl</h2>
-                <p>Project iPadAGirl is a social initiative founded by Zzini Oluchi Ekeh. This website is operated to share information about our mission, accept donations, process outreach applications and provide educational resources on menstrual health. We are not a registered charity but operate as a social enterprise committed to transparency and accountability.</p>
+                <p>Project iPadAGirl is a social initiative founded by Zzini Oluchi Ekeh. This website is operated to share information about our mission, accept donations, process outreach applications and provide educational resources on menstrual health. We are not a registered charity but operate as a Social Impact Organization committed to transparency and accountability.</p>
               </div>
 
               <div>

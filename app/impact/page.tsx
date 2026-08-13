@@ -1,6 +1,7 @@
 ﻿﻿import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Link from "next/link";
+import IbadanCountdown from "../components/IbadanCountdown";
 
 export const metadata = { title: "Our Impact | iPadAGirl" };
 
@@ -114,10 +115,11 @@ export default function ImpactPage() {
         <section className="py-20 bg-dignity-purple text-base-white text-center">
           <div className="max-w-container-max mx-auto px-4 md:px-6 space-y-6">
             <span className="inline-block px-4 py-1.5 bg-white/10 text-white rounded-full font-label-md text-label-md">NEXT STOP</span>
-            <h2 className="font-headline-md text-headline-md">Ibadan — Next Outreach</h2>
+            <h2 className="font-headline-md text-headline-md">Ibadan Outreach — 14 October 2026</h2>
             <p className="font-body-lg text-body-lg opacity-90 max-w-2xl mx-auto">
-              We are heading to Ibadan. The mission continues — more girls, more kits, more education. We are looking for schools to host us and donors to make it possible.
+              We are heading to Ibadan. The mission continues. More girls, more kits, more education. Help us make it possible.
             </p>
+            <IbadanCountdown />
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link href="/request-outreach" className="px-8 py-4 bg-base-white text-dignity-purple rounded-xl font-bold hover:scale-105 transition-transform">
                 Request a School Visit

@@ -34,6 +34,16 @@ const articles = [
     img: "/images/outreach/MMC08284-Enhanced-NR.jpg",
     href: "https://independent.ng/i-pad-a-girl-project-targets-10000-schoolgirls-in-maiden-outreach/",
   },
+  {
+    tag: "PRESS",
+    tagColor: "text-coral-warm bg-coral-warm/10",
+    title: "iGaming AFRIKA Joins I Pad A Girl Initiative to Combat Period Poverty in Nigeria",
+    excerpt: "iGaming AFRIKA has partnered with Project iPadAGirl to help combat period poverty in Nigeria, joining forces with Zzini Oluchi Ekeh's initiative to provide menstrual hygiene products and education to schoolgirls.",
+    source: "iGaming AFRIKA",
+    date: "July 2026",
+    img: "/images/outreach/MMC08277.jpg",
+    href: "https://igamingafrika.com/igaming-afrika-joins-i-pad-a-girl-initiative-to-combat-period-poverty-in-nigeria/",
+  },
 ];
 
 export default function StoriesPage() {

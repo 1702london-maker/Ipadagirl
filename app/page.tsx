@@ -76,14 +76,14 @@ export default function Home() {
             <div className="relative rounded-3xl overflow-hidden shadow-xl aspect-video lg:aspect-square">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/outreach/MMC08163.jpg"
-                alt="Girls at outreach"
+                src="/images/outreach/MMC08253.jpg"
+                alt="Schoolgirls holding their hygiene kits"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink-navy/60 to-transparent" />
               <div className="absolute bottom-6 left-6 text-base-white">
                 <p className="font-body-md italic">
-                  &ldquo;I didn&apos;t go to school because I couldn&apos;t afford pads.&rdquo;
+                  &ldquo;I believe no girl deserves to miss school because she can&apos;t afford pads.&rdquo;
                 </p>
               </div>
             </div>
@@ -179,8 +179,8 @@ export default function Home() {
                 <div className="rounded-3xl overflow-hidden shadow-2xl">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="/images/outreach/MMC08022.jpg"
-                    alt="Hygiene kit being distributed"
+                    src="/images/outreach/MMC08163.jpg"
+                    alt="Zzini presenting the dignity kit"
                     className="w-full object-cover"
                   />
                 </div>
@@ -201,8 +201,8 @@ export default function Home() {
                 <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl -rotate-3">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="/images/outreach/MMC08145.jpg"
-                    alt="Zzini Oluchi Ekeh, Founder"
+                    src="/images/outreach/MMC08007.jpg"
+                    alt="Zzini addressing girls at outreach"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -269,6 +269,41 @@ export default function Home() {
                 ))}
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* YouTube Video Highlight */}
+        <section className="py-20 bg-surface-container-low">
+          <div className="max-w-container-max mx-auto px-4 md:px-6 text-center space-y-8">
+            <span className="inline-block px-4 py-1.5 bg-coral-warm/10 text-coral-warm rounded-full font-label-md text-label-md">VIDEO HIGHLIGHT</span>
+            <h2 className="font-headline-md text-headline-md text-ink-navy">Watch the Outreach in Action</h2>
+            <p className="text-on-surface-variant font-body-md max-w-xl mx-auto">See what happened at our maiden outreach at JOAK Secondary School. Click to watch the full video on YouTube.</p>
+            <a
+              href="https://www.youtube.com/@padagirlwithzzini"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block max-w-3xl mx-auto group"
+            >
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-video bg-ink-navy">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/outreach/MMC08241-Enhanced-NR.jpg"
+                  alt="iPadAGirl outreach video highlight"
+                  className="w-full h-full object-cover opacity-80 group-hover:opacity-70 transition-opacity"
+                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
+                    <svg viewBox="0 0 24 24" fill="white" width="36" height="36">
+                      <path d="M8 5v14l11-7z"/>
+                    </svg>
+                  </div>
+                </div>
+                <div className="absolute bottom-6 left-6 text-white">
+                  <p className="font-label-md text-sm opacity-80">MAIDEN OUTREACH · JULY 2026</p>
+                  <p className="font-headline-sm text-lg">JOAK Secondary School, Ibeju-Lekki</p>
+                </div>
+              </div>
+            </a>
           </div>
         </section>
 

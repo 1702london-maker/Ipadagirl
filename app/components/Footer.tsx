@@ -165,7 +165,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="flex flex-col md:flex-row justify-between gap-4 text-surface-variant text-label-md">
-          <p>© 2026 Project iPadAGirl. Empowering health and education through social progress.</p>
+          <p>© 2026 Project iPadAGirl. Building Confidence One Girl at a Time.</p>
           <div className="flex flex-wrap gap-4">
             <Link href="/privacy-policy" className="hover:text-coral-warm transition-colors">Privacy Policy</Link>
             <Link href="/safeguarding-policy" className="hover:text-coral-warm transition-colors">Safeguarding Policy</Link>

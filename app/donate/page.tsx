@@ -14,10 +14,11 @@ export default function DonatePage() {
       borderClass: "border-outline-variant/30",
       title: "Sponsor a Girl",
       desc: "Covers one complete kit and health session for a girl in need.",
-      price: "₦7,500",
+      price: "₦10,000",
       unit: "/kit",
       btnClass: "bg-primary text-white hover:bg-primary/90",
-      btnLabel: "Donate ₦7,500",
+      btnLabel: "Donate via WhatsApp",
+      btnHref: "https://wa.me/2349169457000",
       popular: false,
     },
     {
@@ -26,10 +27,11 @@ export default function DonatePage() {
       borderClass: "border-2 border-wellbeing-teal",
       title: "Sponsor a Group",
       desc: "Enable a small peer-group to stay in school for a full academic term.",
-      price: "₦75,000",
-      unit: "/10 girls",
+      price: "Contact Us",
+      unit: "",
       btnClass: "bg-wellbeing-teal text-white hover:bg-wellbeing-teal/90",
-      btnLabel: "Sponsor Group",
+      btnLabel: "Donate via WhatsApp",
+      btnHref: "https://wa.me/2349169457000",
       popular: true,
     },
     {
@@ -38,10 +40,11 @@ export default function DonatePage() {
       borderClass: "border-outline-variant/30",
       title: "School Outreach",
       desc: "Fund a full school visit including kits, transport, facilitators and education materials.",
-      price: "₦500,000",
-      unit: "/outreach",
+      price: "Contact Us",
+      unit: "",
       btnClass: "bg-dignity-purple text-white hover:bg-dignity-purple/90",
-      btnLabel: "Sponsor Outreach",
+      btnLabel: "Email Us",
+      btnHref: "mailto:letspadagirlnow@gmail.com",
       popular: false,
     },
   ];
@@ -66,9 +69,9 @@ export default function DonatePage() {
               <h3 className="font-headline-sm text-headline-sm text-ink-navy mb-6">Impact Preview</h3>
               <div className="space-y-6">
                 {[
-                  { label: "₦7,500 covers 1 Girl", sub: "Provides 1 girl with a hygiene kit and a health education session.", color: "text-primary", bg: "bg-pink-soft" },
-                  { label: "₦37,500 covers 5 Girls", sub: "Enables a small group to stay in school for a full term.", color: "text-secondary", bg: "bg-surface-container" },
-                  { label: "₦75,000 covers 10 Girls", sub: "Funds a complete group outreach session with all materials.", color: "text-wellbeing-teal", bg: "bg-wellbeing-teal/10" },
+                  { label: "₦10,000 covers 1 Girl", sub: "Provides 1 girl with a hygiene kit and a health education session.", color: "text-primary", bg: "bg-pink-soft" },
+                  { label: "₦50,000 covers 5 Girls", sub: "Enables a small group to stay in school for a full term.", color: "text-secondary", bg: "bg-surface-container" },
+                  { label: "₦100,000 covers 10 Girls", sub: "Funds a complete group outreach session with all materials.", color: "text-wellbeing-teal", bg: "bg-wellbeing-teal/10" },
                 ].map((item) => (
                   <div key={item.label} className="flex items-start gap-4">
                     <div className={`w-10 h-10 rounded-full ${item.bg} flex items-center justify-center flex-shrink-0`}>
@@ -129,9 +132,9 @@ export default function DonatePage() {
                   <div className="text-headline-md font-bold text-ink-navy mb-6">
                     {tier.price}<span className="text-sm font-normal text-on-surface-variant">{frequency === "monthly" ? "/mo" : tier.unit}</span>
                   </div>
-                  <button className={`w-full py-4 rounded-lg font-label-md transition-colors ${tier.btnClass}`}>
+                  <a href={tier.btnHref} target="_blank" rel="noopener noreferrer" className={`w-full py-4 rounded-lg font-label-md transition-colors text-center block ${tier.btnClass}`}>
                     {tier.btnLabel}
-                  </button>
+                  </a>
                 </div>
               </div>
             ))}
@@ -156,7 +159,7 @@ export default function DonatePage() {
                     </div>
                   ))}
                 </div>
-                <a href="mailto:hello@ipadagirl.org" className="inline-flex items-center gap-2 px-6 py-3 bg-ink-navy text-white rounded-xl font-semibold hover:opacity-90 transition-opacity">
+                <a href="mailto:letspadagirlnow@gmail.com" className="inline-flex items-center gap-2 px-6 py-3 bg-ink-navy text-white rounded-xl font-semibold hover:opacity-90 transition-opacity">
                   Contact Us to Arrange a Donation
                   <span className="material-symbols-outlined">mail</span>
                 </a>
