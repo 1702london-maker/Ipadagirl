@@ -46,7 +46,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2 space-y-6">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.png" alt="Project iPadAGirl" className="h-14 w-auto object-contain" />
+            <img src="/logo-white.png" alt="Project iPadAGirl" className="h-14 w-auto object-contain" />
             <p className="text-surface-variant font-body-md max-w-sm leading-relaxed">
               Empowering schoolgirls across Africa through access to essential hygiene
               products and comprehensive menstrual health education. Together, we

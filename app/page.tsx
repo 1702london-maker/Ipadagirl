@@ -201,7 +201,7 @@ export default function Home() {
                 <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl -rotate-3">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="/images/outreach/MMC08007.jpg"
+                    src="/images/outreach/IMG_6342.jpg"
                     alt="Zzini addressing girls at outreach"
                     className="w-full h-full object-cover"
                   />
