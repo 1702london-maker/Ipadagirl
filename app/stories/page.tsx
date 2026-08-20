@@ -1,7 +1,7 @@
+"use client";
+import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-
-export const metadata = { title: "Stories & News | iPadAGirl" };
 
 const articles = [
   {
@@ -47,6 +47,16 @@ const articles = [
 ];
 
 export default function StoriesPage() {
+  const [email, setEmail] = useState("");
+  const [subStatus, setSubStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  async function handleSubscribe(e: React.FormEvent) {
+    e.preventDefault();
+    setSubStatus("loading");
+    const res = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email }) });
+    setSubStatus(res.ok ? "success" : "error");
+  }
+
   return (
     <>
       <Navbar />
@@ -100,10 +110,17 @@ export default function StoriesPage() {
           <div className="max-w-container-max mx-auto px-4 md:px-6 space-y-4">
             <h2 className="font-headline-sm text-headline-sm text-ink-navy">Stay up to date with our mission</h2>
             <p className="text-on-surface-variant font-body-md">Subscribe to receive outreach reports and updates.</p>
-            <form className="flex gap-3 justify-center max-w-md mx-auto">
-              <input type="email" placeholder="Your email" className="flex-1 px-4 py-3 rounded-lg border border-outline-variant focus:outline-none focus:border-coral-warm transition-colors" />
-              <button type="submit" className="px-6 py-3 bg-coral-warm text-white rounded-lg font-semibold hover:opacity-90 transition-opacity">Subscribe</button>
-            </form>
+            {subStatus === "success" ? (
+              <p className="text-wellbeing-teal font-semibold">You&apos;re subscribed! Thank you for following our journey.</p>
+            ) : (
+              <form onSubmit={handleSubscribe} className="flex gap-3 justify-center max-w-md mx-auto">
+                <input type="email" required value={email} onChange={e => setEmail(e.target.value)} placeholder="Your email" className="flex-1 px-4 py-3 rounded-lg border border-outline-variant focus:outline-none focus:border-coral-warm transition-colors" />
+                <button type="submit" disabled={subStatus === "loading"} className="px-6 py-3 bg-coral-warm text-white rounded-lg font-semibold hover:opacity-90 transition-opacity disabled:opacity-60">
+                  {subStatus === "loading" ? "..." : "Subscribe"}
+                </button>
+              </form>
+            )}
+            {subStatus === "error" && <p className="text-red-500 text-sm">Something went wrong. Please try again.</p>}
           </div>
         </section>
       </main>

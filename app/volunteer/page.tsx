@@ -1,9 +1,19 @@
-﻿import Navbar from "../components/Navbar";
+﻿"use client";
+import { useState } from "react";
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-export const metadata = { title: "Volunteer | iPadAGirl" };
-
 export default function VolunteerPage() {
+  const [form, setForm] = useState({ full_name: "", email: "", phone: "", role: "", skills: "" });
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    setStatus("loading");
+    const res = await fetch("/api/volunteer", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(form) });
+    setStatus(res.ok ? "success" : "error");
+  }
+
   return (
     <>
       <Navbar />
@@ -47,48 +57,63 @@ export default function VolunteerPage() {
             <div className="max-w-2xl mx-auto">
               <h2 className="font-headline-md text-headline-md text-ink-navy mb-4 text-center">Register as a Volunteer</h2>
               <p className="text-on-surface-variant text-center mb-10">Volunteers working directly with children must provide valid ID and complete a safeguarding briefing before any outreach.</p>
-              <form className="space-y-6 bg-base-white p-8 rounded-3xl border border-surface-container-high shadow-sm">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block font-label-md text-label-md text-on-surface-variant mb-2">Full Name *</label>
-                    <input type="text" required className="w-full px-4 py-3 rounded-lg border border-outline-variant focus:outline-none focus:border-wellbeing-teal transition-colors" />
+              {status === "success" ? (
+                <div className="bg-wellbeing-teal/10 border border-wellbeing-teal text-wellbeing-teal p-8 rounded-3xl text-center space-y-3">
+                  <span className="material-symbols-outlined text-4xl">check_circle</span>
+                  <p className="font-headline-sm">Application received!</p>
+                  <p className="font-body-md">We&apos;ll be in touch within 5 working days.</p>
+                </div>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-6 bg-base-white p-8 rounded-3xl border border-surface-container-high shadow-sm">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <label className="block font-label-md text-label-md text-on-surface-variant mb-2">Full Name *</label>
+                      <input type="text" required value={form.full_name} onChange={e => setForm(f => ({ ...f, full_name: e.target.value }))}
+                        className="w-full px-4 py-3 rounded-lg border border-outline-variant focus:outline-none focus:border-wellbeing-teal transition-colors" />
+                    </div>
+                    <div>
+                      <label className="block font-label-md text-label-md text-on-surface-variant mb-2">Email Address *</label>
+                      <input type="email" required value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))}
+                        className="w-full px-4 py-3 rounded-lg border border-outline-variant focus:outline-none focus:border-wellbeing-teal transition-colors" />
+                    </div>
                   </div>
                   <div>
-                    <label className="block font-label-md text-label-md text-on-surface-variant mb-2">Email Address *</label>
-                    <input type="email" required className="w-full px-4 py-3 rounded-lg border border-outline-variant focus:outline-none focus:border-wellbeing-teal transition-colors" />
+                    <label className="block font-label-md text-label-md text-on-surface-variant mb-2">Phone Number</label>
+                    <input type="tel" value={form.phone} onChange={e => setForm(f => ({ ...f, phone: e.target.value }))}
+                      className="w-full px-4 py-3 rounded-lg border border-outline-variant focus:outline-none focus:border-wellbeing-teal transition-colors" />
                   </div>
-                </div>
-                <div>
-                  <label className="block font-label-md text-label-md text-on-surface-variant mb-2">Phone Number</label>
-                  <input type="tel" className="w-full px-4 py-3 rounded-lg border border-outline-variant focus:outline-none focus:border-wellbeing-teal transition-colors" />
-                </div>
-                <div>
-                  <label className="block font-label-md text-label-md text-on-surface-variant mb-2">Volunteer Role *</label>
-                  <select required className="w-full px-4 py-3 rounded-lg border border-outline-variant focus:outline-none focus:border-wellbeing-teal transition-colors bg-base-white">
-                    <option value="">Select a role</option>
-                    <option>Outreach Volunteer</option>
-                    <option>Health Educator</option>
-                    <option>School Liaison</option>
-                    <option>Photography & Media</option>
-                    <option>Logistics Volunteer</option>
-                    <option>Fundraising Volunteer</option>
-                    <option>Administrative Support</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block font-label-md text-label-md text-on-surface-variant mb-2">Relevant Skills / Qualifications</label>
-                  <textarea rows={3} className="w-full px-4 py-3 rounded-lg border border-outline-variant focus:outline-none focus:border-wellbeing-teal transition-colors resize-none" placeholder="Tell us about your relevant experience..." />
-                </div>
-                <div className="flex items-start gap-3">
-                  <input type="checkbox" required id="safeguard" className="mt-1" />
-                  <label htmlFor="safeguard" className="font-body-md text-on-surface-variant text-sm">
-                    I understand that volunteers working with children must undergo safeguarding training and provide valid ID before participating in any outreach.
-                  </label>
-                </div>
-                <button type="submit" className="w-full py-4 bg-wellbeing-teal text-white rounded-xl font-semibold hover:opacity-90 transition-opacity">
-                  Submit Volunteer Application
-                </button>
-              </form>
+                  <div>
+                    <label className="block font-label-md text-label-md text-on-surface-variant mb-2">Volunteer Role *</label>
+                    <select required value={form.role} onChange={e => setForm(f => ({ ...f, role: e.target.value }))}
+                      className="w-full px-4 py-3 rounded-lg border border-outline-variant focus:outline-none focus:border-wellbeing-teal transition-colors bg-base-white">
+                      <option value="">Select a role</option>
+                      <option>Outreach Volunteer</option>
+                      <option>Health Educator</option>
+                      <option>School Liaison</option>
+                      <option>Photography &amp; Media</option>
+                      <option>Logistics Volunteer</option>
+                      <option>Fundraising Volunteer</option>
+                      <option>Administrative Support</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block font-label-md text-label-md text-on-surface-variant mb-2">Relevant Skills / Qualifications</label>
+                    <textarea rows={3} value={form.skills} onChange={e => setForm(f => ({ ...f, skills: e.target.value }))}
+                      className="w-full px-4 py-3 rounded-lg border border-outline-variant focus:outline-none focus:border-wellbeing-teal transition-colors resize-none" placeholder="Tell us about your relevant experience..." />
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <input type="checkbox" required id="safeguard" className="mt-1" />
+                    <label htmlFor="safeguard" className="font-body-md text-on-surface-variant text-sm">
+                      I understand that volunteers working with children must undergo safeguarding training and provide valid ID before participating in any outreach.
+                    </label>
+                  </div>
+                  {status === "error" && <p className="text-red-500 text-sm">Something went wrong. Please try again.</p>}
+                  <button type="submit" disabled={status === "loading"}
+                    className="w-full py-4 bg-wellbeing-teal text-white rounded-xl font-semibold hover:opacity-90 transition-opacity disabled:opacity-60">
+                    {status === "loading" ? "Submitting..." : "Submit Volunteer Application"}
+                  </button>
+                </form>
+              )}
             </div>
           </div>
         </section>
