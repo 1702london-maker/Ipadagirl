@@ -55,7 +55,7 @@ export default function OutreachesPage() {
                 </div>
                 <div className="bg-dignity-purple/10 rounded-2xl p-8 space-y-4">
                   <h4 className="font-headline-sm text-dignity-purple">What We Still Need</h4>
-                  {["Hygiene kit sponsorships (₦7,500 each)", "Transportation support", "Volunteer facilitators", "School host in Lagos or nearby state"].map((item) => (
+                  {["Hygiene kit sponsorships (₦10,000 each)", "Transportation support", "Volunteer facilitators", "School host in Ibadan, Oyo State"].map((item) => (
                     <div key={item} className="flex items-center gap-3">
                       <span className="material-symbols-outlined text-dignity-purple text-[20px]">radio_button_unchecked</span>
                       <p className="font-body-md text-on-surface-variant">{item}</p>
